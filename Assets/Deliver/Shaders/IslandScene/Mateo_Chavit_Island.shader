@@ -136,15 +136,17 @@ Shader "Mateo_Chavit_Island"
 }
 /*ASEBEGIN
 Version=18900
-258;73;783;350;942.0325;-50.42278;1;True;False
-Node;AmplifyShaderEditor.TexturePropertyNode;7;-1026.629,378.9835;Inherit;True;Property;_IsalndHeightmap;Isalnd Heightmap;2;0;Create;True;0;0;0;False;0;False;89358ccb9dc0cb147aaaf447a9cb58f4;None;False;white;Auto;Texture2D;-1;0;2;SAMPLER2D;0;SAMPLERSTATE;1
+258;73;783;374;1212.888;367.7301;2.214155;False;False
+Node;AmplifyShaderEditor.CommentaryNode;10;-1235.254,377.4528;Inherit;False;1002.368;335.6382;Island heightmap;4;7;5;6;3;;1,1,1,1;0;0
+Node;AmplifyShaderEditor.CommentaryNode;11;-630.303,107.5482;Inherit;False;535.5618;310.0066;Hide plain parts;2;9;8;;1,1,1,1;0;0
+Node;AmplifyShaderEditor.TexturePropertyNode;7;-1185.254,427.4529;Inherit;True;Property;_IsalndHeightmap;Isalnd Heightmap;2;0;Create;True;0;0;0;False;0;False;89358ccb9dc0cb147aaaf447a9cb58f4;89358ccb9dc0cb147aaaf447a9cb58f4;False;white;Auto;Texture2D;-1;0;2;SAMPLER2D;0;SAMPLERSTATE;1
 Node;AmplifyShaderEditor.TexturePropertyNode;2;-622.808,-113.1748;Inherit;True;Property;_IslandColor;Island Color;0;0;Create;True;0;0;0;False;0;False;None;None;False;white;Auto;Texture2D;-1;0;2;SAMPLER2D;0;SAMPLERSTATE;1
-Node;AmplifyShaderEditor.Vector3Node;5;-465.4033,476.6216;Inherit;False;Property;_IslandOffset;Island Offset;1;0;Create;True;0;0;0;False;0;False;0,0,0;0,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.SamplerNode;6;-762.7278,378.9834;Inherit;True;Property;_TextureSample1;Texture Sample 1;2;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.Vector3Node;5;-624.0292,525.0909;Inherit;False;Property;_IslandOffset;Island Offset;1;0;Create;True;0;0;0;False;0;False;0,0,0;0,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.SamplerNode;6;-921.3537,427.4528;Inherit;True;Property;_TextureSample1;Texture Sample 1;2;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RangedFloatNode;9;-580.303,157.5482;Inherit;False;Property;_IslandTransparency;Island Transparency;3;0;Create;True;0;0;0;False;0;False;0.08;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SamplerNode;1;-372.4501,-113.1748;Inherit;True;Property;_TextureSample0;Texture Sample 0;0;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.EdgeLengthTessNode;4;-245.2121,490.9431;Inherit;False;1;0;FLOAT;0;False;1;FLOAT4;0
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;3;-236.2613,383.532;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;FLOAT3;0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;3;-394.888,432.0014;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;FLOAT3;0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.StepOpNode;8;-329.7412,163.5548;Inherit;True;2;0;FLOAT;0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;0,0;Float;False;True;-1;6;ASEMaterialInspector;0;0;Standard;Mateo_Chavit_Island;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Transparent;0.5;True;True;0;False;Transparent;;Transparent;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;True;2;15;10;25;False;0.5;True;2;5;False;-1;10;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;False;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;6;0;7;0
@@ -158,4 +160,4 @@ WireConnection;0;9;8;0
 WireConnection;0;11;3;0
 WireConnection;0;14;4;0
 ASEEND*/
-//CHKSM=EDC4EF5C49D5AED6107C64C5A932B102DAFB1962
+//CHKSM=1BDF0A1B14618531F440A39C56B0B43E499FA5F9
