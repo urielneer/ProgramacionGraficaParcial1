@@ -27,15 +27,16 @@ Material:
     m_Ints: []
     m_Floats:
     - _Max: 1
-    - _Min: 0.6
-    - _OffsetScale: 1.4
-    - _OffsetSpeed: 0.14
+    - _Min: 0.1
+    - _OffsetScale: 10
+    - _OffsetSpeed: 0.04
     - _VoronoiScale: 30
     - _VoronoiSpeed: 1.5
+    - _WaveScale: 10
     - __dirty: 0
     m_Colors:
-    - _Color1: {r: 0.09594162, g: 0.12223275, b: 0.41509432, a: 0}
-    - _Color2: {r: 0, g: 0.17992154, b: 0.6320754, a: 0}
+    - _Color1: {r: 0.03991634, g: 0.055031613, b: 0.21698111, a: 0}
+    - _Color2: {r: 0.019090435, g: 0.10258492, b: 0.31132078, a: 0}
     - _Offset: {r: 1, g: 0.5, b: 0, a: 0}
-    - _Vector0: {r: 0, g: 5.5, b: 0, a: 0}
+    - _Vector0: {r: 0, g: 3, b: 0, a: 0}
   m_BuildTextureStacks: []
