@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Florian_Mathe_Road
+  m_Shader: {fileID: 4800000, guid: f53432c973ff84092aa925a065488bab, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Albedo_Dirt:
+        m_Texture: {fileID: 2800000, guid: cc390f9ea16fc4df092cb67b7fe6fd7f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Albedo_Paving:
+        m_Texture: {fileID: 2800000, guid: 0c9deafa7055d459db1f98886568e20e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal_Dirt:
+        m_Texture: {fileID: 2800000, guid: ed6deb81e7c7743c4a43c982119fcdcb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal_Paving:
+        m_Texture: {fileID: 2800000, guid: cbb3bec6b0cf141a5b6b5bcb2d8bc344, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _EdgeLength: 2
+    - _Pavement_Border: 0.09
+    - _Pavement_Size: 0.07
+    - _Paving_Deformation: 0.19
+    - _Paving_Height: 0.07
+    - _Paving_Tiling: 0.3
+    - _TessMax: 20
+    - _TessMin: 0
+    - _TessValue: 14.4
+    - _Tiling_Dirt: 0.1
+    - _Voronoi_Angle: 0
+    - _Voronoi_Scale: 2.12
+    - __dirty: 0
+    m_Colors: []
+  m_BuildTextureStacks: []
