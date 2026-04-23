@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mauro_Pari_StreetBuilding
+  m_Name: Mauro_Pari_StreetBuilding 1
   m_Shader: {fileID: 4800000, guid: 2efc119fcc3e9c343af67c5702090b8b, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -21,7 +21,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _EdificioNoise:
-        m_Texture: {fileID: 2800000, guid: fc30540ca2fe1d8418f41b7e1fc41760, type: 3}
+        m_Texture: {fileID: 2800000, guid: 19a466a28c6bead45afe9dc42c01f998, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
@@ -29,24 +29,44 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalVentana:
-        m_Texture: {fileID: 2800000, guid: 923ecfa2c4e1ce0498cbe4c1fb3c8e41, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4f9d08ac6403d4148a403e11987a57fe, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texturaladrillo:
-        m_Texture: {fileID: 2800000, guid: 8f6cc1114ecd6a94ba47f5eb6e78dd54, type: 3}
-        m_Scale: {x: 1.5, y: 5}
+        m_Texture: {fileID: 2800000, guid: 4b5ddcc0854a1dc4082a0fc1c6a41de5, type: 3}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture0:
-        m_Texture: {fileID: 2800000, guid: fc30540ca2fe1d8418f41b7e1fc41760, type: 3}
+        m_Texture: {fileID: 2800000, guid: 19a466a28c6bead45afe9dc42c01f998, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture1:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Ventana:
-        m_Texture: {fileID: 2800000, guid: 3a68f61e3cf8a2c4dae312302b7b54b2, type: 3}
+    - _TextureSample1:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample9:
+        m_Texture: {fileID: 2800000, guid: 3d74eca1ef7e97d4f83dd177ead1360e, type: 3}
+        m_Scale: {x: 6, y: 6}
+        m_Offset: {x: 0, y: 0}
+    - _Ventana:
+        m_Texture: {fileID: 2800000, guid: 4f9d08ac6403d4148a403e11987a57fe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WallAlbedo:
+        m_Texture: {fileID: 2800000, guid: 7c63885f3e86ecc468fda229135227df, type: 3}
+        m_Scale: {x: 3, y: 3}
+        m_Offset: {x: 0, y: 0}
+    - _WallNormal:
+        m_Texture: {fileID: 2800000, guid: 5ad7b1af440d24443b5b947cc750b920, type: 3}
+        m_Scale: {x: 3, y: 3}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
         m_Texture: {fileID: 0}
@@ -58,8 +78,9 @@ Material:
     - _Offset: 0
     - _OffsetBricks: 0
     - _RefPlane: 0
-    - _Scale: 0.041
+    - _Scale: 0
     - __dirty: 0
     m_Colors:
-    - _TilingBricks: {r: 1.5, g: 5, b: 0, a: 0}
+    - _Color0: {r: 0.33962262, g: 0.18676953, b: 0.12976147, a: 0}
+    - _TilingBricks: {r: -1.5, g: -2, b: 0, a: 0}
   m_BuildTextureStacks: []
