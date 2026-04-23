@@ -2,9 +2,7 @@ fileFormatVersion: 2
 guid: 2e009f28a57b68c43b4bb653ee6a1f98
 ShaderImporter:
   externalObjects: {}
-  defaultTextures:
-  - _TexturaPisoPiedra: {fileID: 2800000, guid: eacfe5a54f2eaab4d83ae4d780b076cb, type: 3}
-  - _TexturaPisoNormal: {fileID: 2800000, guid: eacfe5a54f2eaab4d83ae4d780b076cb, type: 3}
+  defaultTextures: []
   nonModifiableTextures: []
   preprocessorOverride: 0
   userData: 
