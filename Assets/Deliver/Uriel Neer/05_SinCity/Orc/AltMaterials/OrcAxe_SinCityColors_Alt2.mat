@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: OrcAxe_SinCityColors_Alt1_2
+  m_Name: OrcAxe_SinCityColors_Alt2
   m_Shader: {fileID: 4800000, guid: cb7351f46caf7ce45b3dca20f4bbc29a, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -91,8 +91,8 @@ Material:
     - _EmissionMetalChannelG: 0
     - _EmissionMetalChannelR: 1
     - _EmissionWoodChannelB: 0
-    - _EmissionWoodChannelG: 0
-    - _EmissionWoodChannelR: 1
+    - _EmissionWoodChannelG: 1
+    - _EmissionWoodChannelR: 0
     - _EmissiveFresnelBias: 0.422
     - _EmissiveFresnelPower: 0.2
     - _EmissiveFresnelScale: 0.14
@@ -124,11 +124,11 @@ Material:
     - _FleshChannelB: {r: 0.6132076, g: 0.5283837, b: 0, a: 1}
     - _FleshChannelG: {r: 1, g: 0, b: 0, a: 1}
     - _FleshChannelR: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-    - _MetalChannelB: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
-    - _MetalChannelG: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
-    - _MetalChannelR: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 1}
+    - _MetalChannelB: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
+    - _MetalChannelG: {r: 0.1981132, g: 0.1971787, b: 0.1971787, a: 1}
+    - _MetalChannelR: {r: 0.10676406, g: 0.5377358, b: 0.03804734, a: 1}
     - _ShadowTint: {r: 1, g: 1, b: 1, a: 0}
     - _WoodChannelB: {r: 0.671401, g: 0, b: 1, a: 1}
-    - _WoodChannelG: {r: 1, g: 1, b: 1, a: 1}
-    - _WoodChannelR: {r: 1, g: 0, b: 0, a: 1}
+    - _WoodChannelG: {r: 0.105882354, g: 0.5372549, b: 0.039215688, a: 1}
+    - _WoodChannelR: {r: 0.6037736, g: 0.6037736, b: 0.6037736, a: 1}
   m_BuildTextureStacks: []

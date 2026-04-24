@@ -68,27 +68,27 @@ Material:
     m_Floats:
     - _ASEOutlineWidth: 0
     - _Cutoff: 0.5
-    - _EmissiveFresnelBias: 1
+    - _EmissiveFresnelBias: 0.768
     - _EmissiveFresnelPower: -0.7
-    - _EmissiveFresnelScale: 0.282
+    - _EmissiveFresnelScale: 0.436
     - _EmissiveGlowStrength: 0.7
     - _EmissiveHologramFrequency: 3
-    - _EmissiveHologramSpeed: 10
+    - _EmissiveHologramSpeed: 5
     - _EmissiveHolographicBias: 0.517
     - _EmissiveHolographicPower: -0.7
     - _EmissiveHolographicScale: 0.282
     - _EmissiveHolographicSwitch: 1
     - _EmissivePulsationSwitch: 0
     - _EmissivePulseSpeed: 5
-    - _EnvironmentalShadowIntensity: 0.791
+    - _EnvironmentalShadowIntensity: 0.746
     - _HologramDirection: 0
     - _OutlineThickness: 0.0005
     - _OutlineWidth1: 0.02
     - _ShadowAlpha0: 0.77
     - _ShadowIntensity: 0.847
-    - _ShadowLength0: 0.011
-    - _ShadowLength1: 0.153
-    - _ShadowLength2: 0.366
+    - _ShadowLength0: 0.134
+    - _ShadowLength1: 0.299
+    - _ShadowLength2: 0.478
     - __dirty: 0
     m_Colors:
     - _EmissiveColor: {r: 0.72186327, g: 0, b: 1, a: 1}

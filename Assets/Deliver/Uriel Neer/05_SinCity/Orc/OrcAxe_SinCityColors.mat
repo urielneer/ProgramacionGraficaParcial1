@@ -122,13 +122,13 @@ Material:
     - _EyeChannelG: {r: 1, g: 0, b: 0, a: 1}
     - _EyeChannelR: {r: 1, g: 1, b: 1, a: 1}
     - _FleshChannelB: {r: 0.6132076, g: 0.5283837, b: 0, a: 1}
-    - _FleshChannelG: {r: 1, g: 0, b: 0, a: 1}
+    - _FleshChannelG: {r: 1, g: 0.26194972, b: 0, a: 1}
     - _FleshChannelR: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
     - _MetalChannelB: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
-    - _MetalChannelG: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
+    - _MetalChannelG: {r: 0.3490566, g: 0.30181256, b: 0.29142934, a: 1}
     - _MetalChannelR: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 1}
     - _ShadowTint: {r: 1, g: 1, b: 1, a: 0}
     - _WoodChannelB: {r: 0.671401, g: 0, b: 1, a: 1}
     - _WoodChannelG: {r: 1, g: 1, b: 1, a: 1}
-    - _WoodChannelR: {r: 1, g: 0, b: 0, a: 1}
+    - _WoodChannelR: {r: 1, g: 0.02020948, b: 0, a: 1}
   m_BuildTextureStacks: []

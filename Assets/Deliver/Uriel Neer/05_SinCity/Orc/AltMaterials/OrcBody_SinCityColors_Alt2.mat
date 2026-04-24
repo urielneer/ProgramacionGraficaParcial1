@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: OrcBody_SinCityColors
+  m_Name: OrcBody_SinCityColors_Alt2
   m_Shader: {fileID: 4800000, guid: cb7351f46caf7ce45b3dca20f4bbc29a, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -82,15 +82,15 @@ Material:
     - _EmissionClothChannelG: 0
     - _EmissionClothChannelR: 0
     - _EmissionEyesChannelB: 0
-    - _EmissionEyesChannelG: 1
+    - _EmissionEyesChannelG: 0
     - _EmissionEyesChannelR: 0
-    - _EmissionFleshChannelB: 0
+    - _EmissionFleshChannelB: 1
     - _EmissionFleshChannelG: 1
     - _EmissionFleshChannelR: 0
     - _EmissionMetalChannelB: 0
     - _EmissionMetalChannelG: 0
-    - _EmissionMetalChannelR: 0
-    - _EmissionWoodChannelB: 0
+    - _EmissionMetalChannelR: 1
+    - _EmissionWoodChannelB: 1
     - _EmissionWoodChannelG: 0
     - _EmissionWoodChannelR: 0
     - _EmissiveFresnelBias: 1
@@ -117,30 +117,30 @@ Material:
     - _ShadowLength3: 0.078
     - __dirty: 0
     m_Colors:
-    - _ClothChannelB: {r: 0.4528302, g: 0.39088646, b: 0.42925885, a: 1}
+    - _ClothChannelB: {r: 0.73184717, g: 0.754717, b: 0.61587757, a: 1}
     - _ClothChannelB1: {r: 0.4150943, g: 0.3892488, b: 0.4141213, a: 1}
-    - _ClothChannelG: {r: 1, g: 1, b: 1, a: 1}
+    - _ClothChannelG: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
     - _ClothChannelG1: {r: 1, g: 1, b: 1, a: 1}
-    - _ClothChannelR: {r: 0.6039216, g: 0.6039216, b: 0.6039216, a: 1}
+    - _ClothChannelR: {r: 0.28845286, g: 0.3018868, b: 0.249199, a: 1}
     - _ClothChannelR1: {r: 0.2812211, g: 0.3197634, b: 0.3490566, a: 1}
     - _EmissiveColor: {r: 0.4185266, g: 0, b: 1, a: 1}
     - _EyeChannelB: {r: 0, g: 0, b: 0, a: 1}
     - _EyeChannelB1: {r: 1, g: 1, b: 1, a: 1}
-    - _EyeChannelG: {r: 0.98039216, g: 0.05882353, b: 0.21960784, a: 1}
+    - _EyeChannelG: {r: 0.3490566, g: 0.34411713, b: 0.3449789, a: 1}
     - _EyeChannelG1: {r: 1, g: 0, b: 0, a: 1}
     - _EyeChannelR: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
     - _EyeChannelR1: {r: 1, g: 1, b: 1, a: 1}
-    - _FleshChannelB: {r: 0.3679245, g: 0.36378685, b: 0.33842114, a: 1}
+    - _FleshChannelB: {r: 0.8117647, g: 0.98039216, b: 0.05882353, a: 1}
     - _FleshChannelB1: {r: 0.6132076, g: 0.5283837, b: 0, a: 1}
-    - _FleshChannelG: {r: 0.98039216, g: 0.05882353, b: 0.21960784, a: 1}
+    - _FleshChannelG: {r: 0.8122504, g: 0.98039216, b: 0.058823533, a: 1}
     - _FleshChannelG1: {r: 1, g: 0, b: 0, a: 1}
-    - _FleshChannelR: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
+    - _FleshChannelR: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
     - _FleshChannelR1: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
-    - _MetalChannelB: {r: 0.98039216, g: 0.058823533, b: 0.22012107, a: 1}
+    - _MetalChannelB: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
     - _MetalChannelB1: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
-    - _MetalChannelG: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
+    - _MetalChannelG: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
     - _MetalChannelG1: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
-    - _MetalChannelR: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
+    - _MetalChannelR: {r: 0.8117647, g: 0.98039216, b: 0.05882353, a: 1}
     - _MetalChannelR1: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
     - _ShadowTint: {r: 0, g: 0, b: 0, a: 0}
     - _WoodChannelB: {r: 0.671401, g: 0, b: 1, a: 1}

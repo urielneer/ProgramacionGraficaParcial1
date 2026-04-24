@@ -121,7 +121,7 @@ Material:
     - _EyeChannelB: {r: 1, g: 0.95261276, b: 0.21226418, a: 1}
     - _EyeChannelG: {r: 1, g: 0.3151406, b: 0, a: 1}
     - _EyeChannelR: {r: 1, g: 0.010550499, b: 0, a: 1}
-    - _FleshChannelB: {r: 0.254717, g: 0.23905043, b: 0.21266466, a: 1}
+    - _FleshChannelB: {r: 0.5, g: 0.45283017, b: 0.370283, a: 1}
     - _FleshChannelG: {r: 0, g: 0, b: 0, a: 1}
     - _FleshChannelR: {r: 0.6132076, g: 0.57502675, b: 0.57502675, a: 1}
     - _MetalChannelB: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}

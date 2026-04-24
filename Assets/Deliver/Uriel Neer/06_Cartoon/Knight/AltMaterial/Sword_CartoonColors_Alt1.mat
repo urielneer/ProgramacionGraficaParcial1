@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: KnightBody_CartoonColors
+  m_Name: Sword_CartoonColors_Alt1
   m_Shader: {fileID: 4800000, guid: ad743f236af5b5342b1de4c6b3cdb666, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -21,11 +21,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _AlbedoTexture:
-        m_Texture: {fileID: 2800000, guid: e168bcf7e5f60e544811546e245bf976, type: 3}
+        m_Texture: {fileID: 2800000, guid: 88f736a7a6a78c549b320d944a33f48a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BlueMaskPattern:
-        m_Texture: {fileID: 2800000, guid: b4c28decfb6dbe545a0ea2dcf273606d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1103544499b1af140a40fecda81c4668, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BlueMaskPatternx:
@@ -33,11 +33,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
-        m_Texture: {fileID: 2800000, guid: bd734c29baceb63499732f24fbaea45f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 10ff51d2d87fb7b46b70b55f8551c146, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _PlaidMasks:
-        m_Texture: {fileID: 2800000, guid: c84a52f5422e21b4ab4aabcf75f17f8c, type: 3}
+        m_Texture: {fileID: 2800000, guid: cf06da54f542f294baa4c67b6073af49, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _PlaidedPattern1:
@@ -45,7 +45,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RedMaskPattern:
-        m_Texture: {fileID: 2800000, guid: fb0fe495f526d6a46932142c85571ac0, type: 3}
+        m_Texture: {fileID: 2800000, guid: c9e4de0f59be5784392f52f8461f18e8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture0:
@@ -71,7 +71,7 @@ Material:
     - _EmissiveFresnelBias: 0.517
     - _EmissiveFresnelPower: -0.7
     - _EmissiveFresnelScale: 0.282
-    - _EmissiveGlowStrength: 0.3
+    - _EmissiveGlowStrength: 0.4
     - _EmissiveHologramFrequency: 3
     - _EmissiveHologramSpeed: 10
     - _EmissiveHolographicBias: 0.517
@@ -91,7 +91,7 @@ Material:
     - _ShadowLength2: 0.366
     - __dirty: 0
     m_Colors:
-    - _EmissiveColor: {r: 0.83137256, g: 0.39923814, b: 0.058823522, a: 1}
+    - _EmissiveColor: {r: 1, g: 0.23719184, b: 0.21226418, a: 1}
     - _EmissiveNeonColor: {r: 0.43862855, g: 1, b: 0, a: 1}
     - _LightTint: {r: 1, g: 1, b: 1, a: 0}
     - _OutlineTint1: {r: 0.5294118, g: 0.5294118, b: 0.5294118, a: 0}
