@@ -54,7 +54,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _WallAlbedo:
         m_Texture: {fileID: 2800000, guid: 0deb1bd4374d24741ab311509af16d39, type: 3}
-        m_Scale: {x: 4, y: 8}
+        m_Scale: {x: 3, y: 3}
         m_Offset: {x: 0, y: 0}
     - _WallNormal:
         m_Texture: {fileID: 2800000, guid: 042c85ef3df5c134f8ba48641542174d, type: 3}
@@ -75,4 +75,5 @@ Material:
     m_Colors:
     - _Color0: {r: 1, g: 0.8037991, b: 0.7311321, a: 0}
     - _TilingBricks: {r: -1.5, g: -2, b: 0, a: 0}
+    - _WallColor: {r: 1, g: 0.9567624, b: 0.9386792, a: 1}
   m_BuildTextureStacks: []

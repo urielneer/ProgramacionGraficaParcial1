@@ -20,8 +20,20 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlbedoPasto:
+        m_Texture: {fileID: 2800000, guid: c68296334e691ed45b62266cbc716628, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GrassBladeTexture:
+        m_Texture: {fileID: 2800000, guid: 662d72b6ec210cf4cbeec2b4d3cb8b2a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalPasto:
+        m_Texture: {fileID: 2800000, guid: 7ddcba51d9fc0894d98b4ba77fbdfbd7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _PastoHeight:
-        m_Texture: {fileID: 2800000, guid: d92b830293cf83444ba64176de74941f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3d7afb32b16708f43acabe51bcbd0f43, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample0:
@@ -38,7 +50,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _GrassHeight: 8.13
+    - _GrassHeight: 6.45
+    - _Step: 0
     - __dirty: 0
     m_Colors: []
   m_BuildTextureStacks: []

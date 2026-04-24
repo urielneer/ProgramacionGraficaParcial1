@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material
+  m_Name: Mauro_Pari_Street_Floor
   m_Shader: {fileID: 4800000, guid: 2e009f28a57b68c43b4bb653ee6a1f98, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -147,7 +147,7 @@ Material:
     - _OcclusionStrength: 1
     - _OffsetBricks: 0
     - _Parallax: 0.02
-    - _ParallaxStrength: 0.02
+    - _ParallaxStrength: 0.05
     - _Smoothness: 0.8
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
