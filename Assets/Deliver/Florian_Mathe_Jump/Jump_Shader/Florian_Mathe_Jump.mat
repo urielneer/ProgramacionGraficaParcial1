@@ -35,7 +35,7 @@ Material:
     - _Columns_Offset: 0.5
     - _Padding: 0.1
     - _Scaling_Padding: 1
-    - __dirty: 0
+    - __dirty: 1
     m_Colors:
     - _Arrow_Color: {r: 0.065857984, g: 0.13240921, b: 0.12755652, a: 0}
     - _Arrow_Tiling: {r: 5, g: 3, b: 0, a: 0}

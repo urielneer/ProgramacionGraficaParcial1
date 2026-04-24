@@ -16,6 +16,8 @@ Shader "Florian_Mathe_Road"
 		_Pavement_Border("Pavement_Border", Range( 0 , 1)) = 0.78
 		_Paving_Deformation("Paving_Deformation", Range( 0 , 1)) = 0
 		_Paving_Height("Paving_Height", Float) = 0
+		_Rock_Normals_Intensity("Rock_Normals_Intensity", Float) = 2
+		_Pavementless_Zones_Scale("Pavementless_Zones_Scale", Range( 0 , 2)) = 0.7
 		[HideInInspector] __dirty( "", Int ) = 1
 	}
 
@@ -24,6 +26,7 @@ Shader "Florian_Mathe_Road"
 		Tags{ "RenderType" = "Opaque"  "Queue" = "Geometry+0" }
 		Cull Back
 		CGPROGRAM
+		#include "UnityStandardUtils.cginc"
 		#include "Tessellation.cginc"
 		#pragma target 4.6
 		#pragma surface surf Standard keepalpha addshadow fullforwardshadows vertex:vertexDataFunc tessellate:tessFunction 
@@ -37,11 +40,13 @@ Shader "Florian_Mathe_Road"
 		uniform float _Voronoi_Angle;
 		uniform float _Voronoi_Scale;
 		uniform float _Paving_Deformation;
+		uniform float _Pavementless_Zones_Scale;
 		uniform float _Paving_Height;
 		uniform sampler2D _Normal_Dirt;
 		uniform float _Tiling_Dirt;
 		uniform sampler2D _Normal_Paving;
 		uniform float _Paving_Tiling;
+		uniform float _Rock_Normals_Intensity;
 		uniform sampler2D _Albedo_Dirt;
 		uniform sampler2D _Albedo_Paving;
 
@@ -130,8 +135,12 @@ Shader "Florian_Mathe_Road"
 			float2 uv24 = 0;
 			float voroi24 = voronoi24( coords24, time24, id24, uv24, 0 );
 			float smoothstepResult26 = smoothstep( _Pavement_Size , _Pavement_Border , voroi24);
-			float temp_output_29_0 = ( 1.0 - smoothstepResult26 );
-			float3 appendResult41 = (float3(0.0 , ( temp_output_29_0 * _Paving_Height ) , 0.0));
+			float2 appendResult52 = (float2(ase_worldPos.x , ase_worldPos.z));
+			float simplePerlin2D46 = snoise( appendResult52*_Pavementless_Zones_Scale );
+			simplePerlin2D46 = simplePerlin2D46*0.5 + 0.5;
+			float smoothstepResult49 = smoothstep( 0.35 , 0.65 , simplePerlin2D46);
+			float temp_output_50_0 = ( ( 1.0 - smoothstepResult26 ) * smoothstepResult49 );
+			float3 appendResult41 = (float3(0.0 , ( temp_output_50_0 * _Paving_Height ) , 0.0));
 			v.vertex.xyz += appendResult41;
 			v.vertex.w = 1;
 		}
@@ -153,10 +162,14 @@ Shader "Florian_Mathe_Road"
 			float2 uv24 = 0;
 			float voroi24 = voronoi24( coords24, time24, id24, uv24, 0 );
 			float smoothstepResult26 = smoothstep( _Pavement_Size , _Pavement_Border , voroi24);
-			float temp_output_29_0 = ( 1.0 - smoothstepResult26 );
-			float4 lerpResult37 = lerp( tex2D( _Normal_Dirt, temp_output_5_0 ) , tex2D( _Normal_Paving, temp_output_14_0 ) , temp_output_29_0);
+			float2 appendResult52 = (float2(ase_worldPos.x , ase_worldPos.z));
+			float simplePerlin2D46 = snoise( appendResult52*_Pavementless_Zones_Scale );
+			simplePerlin2D46 = simplePerlin2D46*0.5 + 0.5;
+			float smoothstepResult49 = smoothstep( 0.35 , 0.65 , simplePerlin2D46);
+			float temp_output_50_0 = ( ( 1.0 - smoothstepResult26 ) * smoothstepResult49 );
+			float4 lerpResult37 = lerp( tex2D( _Normal_Dirt, temp_output_5_0 ) , float4( UnpackScaleNormal( tex2D( _Normal_Paving, temp_output_14_0 ), _Rock_Normals_Intensity ) , 0.0 ) , temp_output_50_0);
 			o.Normal = lerpResult37.rgb;
-			float4 lerpResult36 = lerp( tex2D( _Albedo_Dirt, temp_output_5_0 ) , tex2D( _Albedo_Paving, temp_output_14_0 ) , temp_output_29_0);
+			float4 lerpResult36 = lerp( tex2D( _Albedo_Dirt, temp_output_5_0 ) , tex2D( _Albedo_Paving, temp_output_14_0 ) , temp_output_50_0);
 			o.Albedo = lerpResult36.rgb;
 			o.Alpha = 1;
 		}
@@ -168,39 +181,48 @@ Shader "Florian_Mathe_Road"
 }
 /*ASEBEGIN
 Version=18900
-295;165;1360;694;272.4097;-561.5928;1.673357;True;True
+260;211;1360;694;3142.811;18.07935;5.136575;True;True
 Node;AmplifyShaderEditor.WorldPosInputsNode;21;-1390.63,1303.781;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.RangedFloatNode;20;-1356.913,1479.922;Inherit;False;Property;_Voronoi_Scale;Voronoi_Scale;6;0;Create;True;0;0;0;False;0;False;0;1.79;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.DynamicAppendNode;22;-1198.404,1312.886;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0
+Node;AmplifyShaderEditor.RangedFloatNode;20;-1379.913,1490.922;Inherit;False;Property;_Voronoi_Scale;Voronoi_Scale;6;0;Create;True;0;0;0;False;0;False;0;1.79;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.DynamicAppendNode;22;-1220.404,1292.886;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;23;-1041.469,1394.994;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.NoiseGeneratorNode;30;-884.4714,1544.213;Inherit;False;Simplex2D;True;False;2;0;FLOAT2;0,0;False;1;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;31;-959.4716,1691.214;Inherit;False;Property;_Paving_Deformation;Paving_Deformation;10;0;Create;True;0;0;0;False;0;False;0;0.12;0;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;32;-668.4715,1597.213;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;25;-514.4055,1560.091;Inherit;False;Property;_Voronoi_Angle;Voronoi_Angle;8;0;Create;True;0;0;0;False;0;False;0;0;0;16;0;1;FLOAT;0
+Node;AmplifyShaderEditor.WorldPosInputsNode;51;-496.8115,1820.895;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.SimpleAddOpNode;33;-561.3083,1382.836;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0
-Node;AmplifyShaderEditor.WorldPosInputsNode;1;-520.069,236.2827;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.WorldPosInputsNode;11;-494.983,717.8038;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.RangedFloatNode;28;-71.6001,1571.819;Inherit;False;Property;_Pavement_Border;Pavement_Border;9;0;Create;True;0;0;0;False;0;False;0.78;0.08;0;1;0;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;27;-57.39142,1463.119;Inherit;False;Property;_Pavement_Size;Pavement_Size;7;0;Create;True;0;0;0;False;0;False;0;0.05;0;1;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;25;-514.4055,1560.091;Inherit;False;Property;_Voronoi_Angle;Voronoi_Angle;8;0;Create;True;0;0;0;False;0;False;0;0;0;16;0;1;FLOAT;0
 Node;AmplifyShaderEditor.VoronoiNode;24;-301.5904,1388.26;Inherit;False;0;0;1;0;1;False;1;False;False;4;0;FLOAT2;0,0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;3;FLOAT;0;FLOAT2;1;FLOAT2;2
-Node;AmplifyShaderEditor.DynamicAppendNode;13;-302.757,726.9092;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0
-Node;AmplifyShaderEditor.DynamicAppendNode;10;-327.843,245.3882;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0
-Node;AmplifyShaderEditor.RangedFloatNode;3;-380.4521,474.0369;Inherit;False;Property;_Tiling_Dirt;Tiling_Dirt;0;0;Create;True;0;0;0;False;0;False;0.5;0.1;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.WorldPosInputsNode;11;-494.983,717.8038;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.DynamicAppendNode;52;-326.5856,1810;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0
+Node;AmplifyShaderEditor.RangedFloatNode;27;-57.39142,1463.119;Inherit;False;Property;_Pavement_Size;Pavement_Size;7;0;Create;True;0;0;0;False;0;False;0;0.05;0;1;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;48;-270.2604,1918.43;Inherit;False;Property;_Pavementless_Zones_Scale;Pavementless_Zones_Scale;13;0;Create;True;0;0;0;False;0;False;0.7;0.22;0;2;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;28;-71.6001,1571.819;Inherit;False;Property;_Pavement_Border;Pavement_Border;9;0;Create;True;0;0;0;False;0;False;0.78;0.08;0;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;17;-314.84,1006.883;Inherit;False;Property;_Paving_Tiling;Paving_Tiling;5;0;Create;True;0;0;0;False;0;False;0.3;0.3;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.DynamicAppendNode;13;-302.757,726.9092;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0
+Node;AmplifyShaderEditor.WorldPosInputsNode;1;-520.069,236.2827;Inherit;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.SmoothstepOpNode;26;213.2453,1387.253;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0
-Node;AmplifyShaderEditor.OneMinusNode;29;390.2977,1291.418;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;38;466.1488,1459.358;Inherit;False;Property;_Paving_Height;Paving_Height;11;0;Create;True;0;0;0;False;0;False;0;0.07;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.NoiseGeneratorNode;46;56.30866,1746.696;Inherit;False;Simplex2D;True;False;2;0;FLOAT2;0,0;False;1;FLOAT;1;False;1;FLOAT;0
+Node;AmplifyShaderEditor.OneMinusNode;29;340.1859,1299.77;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.DynamicAppendNode;10;-327.843,245.3882;Inherit;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;14;-128.7412,835.1636;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0
+Node;AmplifyShaderEditor.RangedFloatNode;3;-380.4521,474.0369;Inherit;False;Property;_Tiling_Dirt;Tiling_Dirt;0;0;Create;True;0;0;0;False;0;False;0.5;0.28;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.SmoothstepOpNode;49;257.9567,1739.419;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0.35;False;2;FLOAT;0.65;False;1;FLOAT;0
+Node;AmplifyShaderEditor.SamplerNode;19;11.78023,991.9439;Inherit;True;Property;_Normal_Paving;Normal_Paving;4;0;Create;True;0;0;0;False;0;False;-1;None;cbb3bec6b0cf141a5b6b5bcb2d8bc344;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.RangedFloatNode;38;599.1488,1589.358;Inherit;False;Property;_Paving_Height;Paving_Height;11;0;Create;True;0;0;0;False;0;False;0;0.1;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;44;6.886445,1246.551;Inherit;False;Property;_Rock_Normals_Intensity;Rock_Normals_Intensity;12;0;Create;True;0;0;0;False;0;False;2;1.08;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;50;472.5724,1390.698;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;5;-153.827,353.6425;Inherit;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.SamplerNode;8;29.99684,305.1194;Inherit;True;Property;_Albedo_Dirt;Albedo_Dirt;1;0;Create;True;0;0;0;False;0;False;-1;None;cc390f9ea16fc4df092cb67b7fe6fd7f;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;40;644.9077,1388.981;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.SamplerNode;19;11.78023,991.9439;Inherit;True;Property;_Normal_Paving;Normal_Paving;4;0;Create;True;0;0;0;False;0;False;-1;None;cbb3bec6b0cf141a5b6b5bcb2d8bc344;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SamplerNode;9;30.04231,523.2116;Inherit;True;Property;_Normal_Dirt;Normal_Dirt;2;0;Create;True;0;0;0;False;0;False;-1;None;ed6deb81e7c7743c4a43c982119fcdcb;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;40;644.9077,1388.981;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SamplerNode;18;5.556412,785.2974;Inherit;True;Property;_Albedo_Paving;Albedo_Paving;3;0;Create;True;0;0;0;False;0;False;-1;None;0c9deafa7055d459db1f98886568e20e;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.LerpOp;36;536.5427,672.8514;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
-Node;AmplifyShaderEditor.DynamicAppendNode;41;796.923,1356.608;Inherit;False;FLOAT3;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0
-Node;AmplifyShaderEditor.LerpOp;37;544.2275,828.8129;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
+Node;AmplifyShaderEditor.UnpackScaleNormalNode;43;301.1722,1043.354;Inherit;False;2;0;FLOAT4;0,0,0,0;False;1;FLOAT;1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
 Node;AmplifyShaderEditor.EdgeLengthTessNode;42;708.0281,990.0029;Inherit;False;1;0;FLOAT;0.01;False;1;FLOAT4;0
+Node;AmplifyShaderEditor.DynamicAppendNode;41;796.923,1356.608;Inherit;False;FLOAT3;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0
+Node;AmplifyShaderEditor.TextureCoordinatesNode;54;-522.8041,2025.14;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.LerpOp;37;585.1003,833.4839;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
+Node;AmplifyShaderEditor.LerpOp;36;536.5427,672.8514;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
 Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;962.2057,657.111;Float;False;True;-1;6;ASEMaterialInspector;0;0;Standard;Florian_Mathe_Road;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Opaque;0.5;True;True;0;False;Opaque;;Geometry;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;True;2;2;0;20;False;0.5;True;0;0;False;-1;0;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;False;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;22;0;21;1
 WireConnection;22;1;21;3
@@ -213,34 +235,43 @@ WireConnection;33;0;23;0
 WireConnection;33;1;32;0
 WireConnection;24;0;33;0
 WireConnection;24;1;25;0
+WireConnection;52;0;51;1
+WireConnection;52;1;51;3
 WireConnection;13;0;11;1
 WireConnection;13;1;11;3
-WireConnection;10;0;1;1
-WireConnection;10;1;1;3
 WireConnection;26;0;24;0
 WireConnection;26;1;27;0
 WireConnection;26;2;28;0
+WireConnection;46;0;52;0
+WireConnection;46;1;48;0
 WireConnection;29;0;26;0
+WireConnection;10;0;1;1
+WireConnection;10;1;1;3
 WireConnection;14;0;13;0
 WireConnection;14;1;17;0
+WireConnection;49;0;46;0
+WireConnection;19;1;14;0
+WireConnection;50;0;29;0
+WireConnection;50;1;49;0
 WireConnection;5;0;10;0
 WireConnection;5;1;3;0
 WireConnection;8;1;5;0
-WireConnection;40;0;29;0
-WireConnection;40;1;38;0
-WireConnection;19;1;14;0
 WireConnection;9;1;5;0
+WireConnection;40;0;50;0
+WireConnection;40;1;38;0
 WireConnection;18;1;14;0
-WireConnection;36;0;8;0
-WireConnection;36;1;18;0
-WireConnection;36;2;29;0
+WireConnection;43;0;19;0
+WireConnection;43;1;44;0
 WireConnection;41;1;40;0
 WireConnection;37;0;9;0
-WireConnection;37;1;19;0
-WireConnection;37;2;29;0
+WireConnection;37;1;43;0
+WireConnection;37;2;50;0
+WireConnection;36;0;8;0
+WireConnection;36;1;18;0
+WireConnection;36;2;50;0
 WireConnection;0;0;36;0
 WireConnection;0;1;37;0
 WireConnection;0;11;41;0
 WireConnection;0;14;42;0
 ASEEND*/
-//CHKSM=192BB401C280503F603302643338522FA160573E
+//CHKSM=F5C2802C2A13C6630C78EE34724C240C190670CE

@@ -31,7 +31,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Pulse_Speed: 5
-    - __dirty: 0
+    - __dirty: 1
     m_Colors:
     - _Color_Base: {r: 0, g: 1.6551884, b: 2.4941182, a: 0}
   m_BuildTextureStacks: []
