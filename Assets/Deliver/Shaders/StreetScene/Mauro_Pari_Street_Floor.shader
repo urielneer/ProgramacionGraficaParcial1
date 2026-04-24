@@ -4,13 +4,11 @@ Shader "Mauro_Pari_Street_Floor"
 {
 	Properties
 	{
-		_TexturaPisoPiedra("TexturaPisoPiedra", 2D) = "white" {}
+		_EdgeLength ( "Edge length", Range( 2, 50 ) ) = 15
 		_TexturaPisoNormal("TexturaPisoNormal", 2D) = "bump" {}
 		_AlbedoPiso("AlbedoPiso", 2D) = "white" {}
-		_AlbedoTierra("AlbedoTierra", 2D) = "white" {}
 		_FloorHeightMap("FloorHeightMap", 2D) = "white" {}
-		_ParallaxStrength("ParallaxStrength", Float) = 0.02
-		_TextureSample1("Texture Sample 1", 2D) = "white" {}
+		_ParallaxStrength("ParallaxStrength", Range( 0 , 0.05)) = 0.05
 		[HideInInspector] _texcoord( "", 2D ) = "white" {}
 		[HideInInspector] __dirty( "", Int ) = 1
 	}
@@ -39,17 +37,12 @@ Shader "Mauro_Pari_Street_Floor"
 			INTERNAL_DATA
 		};
 
-		uniform sampler2D _AlbedoTierra;
-		uniform float4 _AlbedoTierra_ST;
 		uniform sampler2D _TexturaPisoNormal;
 		uniform sampler2D _FloorHeightMap;
 		uniform float4 _FloorHeightMap_ST;
 		uniform float _ParallaxStrength;
-		uniform sampler2D _TexturaPisoPiedra;
-		uniform float4 _TexturaPisoPiedra_ST;
 		uniform sampler2D _AlbedoPiso;
-		uniform sampler2D _TextureSample1;
-		uniform float4 _TextureSample1_ST;
+		uniform float _EdgeLength;
 
 
 		float4 CalculateContrast( float contrastValue, float4 colorTarget )
@@ -60,8 +53,7 @@ Shader "Mauro_Pari_Street_Floor"
 
 		float4 tessFunction( appdata_full v0, appdata_full v1, appdata_full v2 )
 		{
-			float4 temp_cast_0 = (16.0).xxxx;
-			return temp_cast_0;
+			return UnityEdgeLengthBasedTess (v0.vertex, v1.vertex, v2.vertex, _EdgeLength);
 		}
 
 		void vertexDataFunc( inout appdata_full v )
@@ -70,20 +62,14 @@ Shader "Mauro_Pari_Street_Floor"
 
 		void surf( Input i , inout SurfaceOutputStandard o )
 		{
-			float2 uv_AlbedoTierra = i.uv_texcoord * _AlbedoTierra_ST.xy + _AlbedoTierra_ST.zw;
-			float4 tex2DNode47 = tex2D( _AlbedoTierra, uv_AlbedoTierra );
 			float2 uv_FloorHeightMap = i.uv_texcoord * _FloorHeightMap_ST.xy + _FloorHeightMap_ST.zw;
 			float4 appendResult52 = (float4(i.viewDir.x , i.viewDir.y , 0.0 , 0.0));
 			float2 uv_TexCoord58 = i.uv_texcoord * float2( 8,8 ) + ( ( tex2D( _FloorHeightMap, uv_FloorHeightMap ).r * _ParallaxStrength ) * appendResult52 ).xy;
-			float2 uv_TexturaPisoPiedra = i.uv_texcoord * _TexturaPisoPiedra_ST.xy + _TexturaPisoPiedra_ST.zw;
-			float4 tex2DNode2 = tex2D( _TexturaPisoPiedra, uv_TexturaPisoPiedra );
-			float4 lerpResult60 = lerp( tex2DNode47 , CalculateContrast(0.5,float4( UnpackNormal( float4( UnpackNormal( tex2D( _TexturaPisoNormal, uv_TexCoord58 ) ) , 0.0 ) ) , 0.0 )) , tex2DNode2);
-			o.Normal = lerpResult60.rgb;
-			float4 AlbedoTierra71 = CalculateContrast(1.9,tex2DNode47);
-			float4 lerpResult9 = lerp( AlbedoTierra71 , tex2D( _AlbedoPiso, uv_TexCoord58 ) , tex2DNode2);
-			o.Albedo = lerpResult9.rgb;
-			float2 uv_TextureSample1 = i.uv_texcoord * _TextureSample1_ST.xy + _TextureSample1_ST.zw;
-			o.Smoothness = ( tex2D( _TextureSample1, uv_TextureSample1 ).r * 2.5 );
+			float2 FloorParallaxUV81 = uv_TexCoord58;
+			float4 NormalContrast95 = CalculateContrast(0.5,float4( UnpackNormal( float4( UnpackNormal( tex2D( _TexturaPisoNormal, FloorParallaxUV81 ) ) , 0.0 ) ) , 0.0 ));
+			o.Normal = NormalContrast95.rgb;
+			float4 AlbedoPisoRef86 = tex2D( _AlbedoPiso, FloorParallaxUV81 );
+			o.Albedo = AlbedoPisoRef86.rgb;
 			o.Alpha = 1;
 		}
 
@@ -175,62 +161,47 @@ Shader "Mauro_Pari_Street_Floor"
 }
 /*ASEBEGIN
 Version=18900
-880;73;1039;918;1743.716;1905.987;3.750011;True;False
-Node;AmplifyShaderEditor.ViewDirInputsCoordNode;48;-1783.168,796.6674;Inherit;False;Tangent;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.SamplerNode;54;-1800.481,500.1897;Inherit;True;Property;_FloorHeightMap;FloorHeightMap;4;0;Create;True;0;0;0;False;0;False;-1;None;a0ba43f29bb76c44abe1da969219a3ce;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RangedFloatNode;55;-1738.281,696.8257;Inherit;False;Property;_ParallaxStrength;ParallaxStrength;5;0;Create;True;0;0;0;False;0;False;0.02;0;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.DynamicAppendNode;52;-1549.623,790.5435;Inherit;False;FLOAT4;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT4;0
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;56;-1409.281,507.8255;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.Vector2Node;59;-1114.174,388.7365;Inherit;False;Constant;_Vector0;Vector 0;6;0;Create;True;0;0;0;False;0;False;8,8;0,0;0;3;FLOAT2;0;FLOAT;1;FLOAT;2
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;57;-1225.834,535.0623;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT4;0,0,0,0;False;1;FLOAT4;0
-Node;AmplifyShaderEditor.TextureCoordinatesNode;58;-814.3515,467.2856;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SamplerNode;3;-158.6795,956.9587;Inherit;True;Property;_TexturaPisoNormal;TexturaPisoNormal;1;0;Create;True;0;0;0;False;0;False;-1;None;6f61d17e1a557be459e7e5c443ee4a29;True;0;False;bump;Auto;True;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SamplerNode;47;-129.4468,502.0903;Inherit;True;Property;_AlbedoTierra;AlbedoTierra;3;0;Create;True;0;0;0;False;0;False;-1;None;cc390f9ea16fc4df092cb67b7fe6fd7f;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.UnpackScaleNormalNode;4;246.6288,988.6906;Inherit;False;2;0;FLOAT4;0,0,0,0;False;1;FLOAT;1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.SamplerNode;12;-234.9354,221.5823;Inherit;True;Property;_AlbedoPiso;AlbedoPiso;2;0;Create;True;0;0;0;False;0;False;-1;None;26795b2541ef42b4d98f8c2cf2cfdf91;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SimpleContrastOpNode;64;261.8999,555.6227;Inherit;False;2;1;COLOR;0,0,0,0;False;0;FLOAT;1.9;False;1;COLOR;0
-Node;AmplifyShaderEditor.RegisterLocalVarNode;71;507.1284,599.7479;Inherit;False;AlbedoTierra;-1;True;1;0;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.SimpleContrastOpNode;62;515.0272,1023.082;Inherit;False;2;1;COLOR;0,0,0,0;False;0;FLOAT;0.5;False;1;COLOR;0
-Node;AmplifyShaderEditor.SamplerNode;2;601.6663,709.352;Inherit;True;Property;_TexturaPisoPiedra;TexturaPisoPiedra;0;0;Create;True;0;0;0;False;0;False;-1;None;eacfe5a54f2eaab4d83ae4d780b076cb;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RangedFloatNode;67;820.4232,1319.77;Inherit;False;Constant;_Float0;Float 0;7;0;Create;True;0;0;0;False;0;False;2.5;0;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.WireNode;74;466.4605,888.4036;Inherit;False;1;0;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.SamplerNode;65;737.0042,1124.875;Inherit;True;Property;_TextureSample1;Texture Sample 1;6;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.WireNode;68;526.0059,446.8325;Inherit;False;1;0;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.LerpOp;9;1085.93,550.4477;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.RangedFloatNode;79;1301.045,1094.452;Inherit;False;Constant;_Tesselation;Tesselation;7;0;Create;True;0;0;0;False;0;False;16;0;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.LerpOp;60;1015.46,960.895;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;66;1078.633,1167.149;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.RegisterLocalVarNode;80;980.0775,755.4617;Inherit;False;PisoNoiseRefR;-1;True;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;1452.094,631.9246;Float;False;True;-1;6;ASEMaterialInspector;0;0;Standard;Mauro_Pari_Street_Floor;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Opaque;0.5;True;True;0;False;Opaque;;Geometry;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;True;2;15;10;25;False;0.5;True;0;0;False;-1;0;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;False;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
-WireConnection;52;0;48;1
-WireConnection;52;1;48;2
+880;73;1039;918;204.5862;31.08674;1.955844;True;False
+Node;AmplifyShaderEditor.CommentaryNode;85;-870.7997,590.1938;Inherit;False;1272.164;534.4777;Parallax del piso. Genera una leve distorsión en la textura y al caminar que da la apariencia de más profundidad entre las piedras;9;48;55;54;52;56;59;57;58;81;;1,1,1,1;0;0
+Node;AmplifyShaderEditor.SamplerNode;54;-820.7997,640.1938;Inherit;True;Property;_FloorHeightMap;FloorHeightMap;7;0;Create;True;0;0;0;False;0;False;-1;None;a0ba43f29bb76c44abe1da969219a3ce;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.ViewDirInputsCoordNode;48;-803.4867,936.6715;Inherit;False;Tangent;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.RangedFloatNode;55;-771.4877,843.9901;Inherit;False;Property;_ParallaxStrength;ParallaxStrength;8;0;Create;True;0;0;0;False;0;False;0.05;0;0;0.05;0;1;FLOAT;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;56;-459.7469,766.0963;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.DynamicAppendNode;52;-569.9416,930.5476;Inherit;False;FLOAT4;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT4;0
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;57;-271.6619,888.41;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT4;0,0,0,0;False;1;FLOAT4;0
+Node;AmplifyShaderEditor.Vector2Node;59;-280.5859,688.7479;Inherit;False;Constant;_Vector0;Vector 0;6;0;Create;True;0;0;0;False;0;False;8,8;0,0;0;3;FLOAT2;0;FLOAT;1;FLOAT;2
+Node;AmplifyShaderEditor.TextureCoordinatesNode;58;-78.15917,758.022;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.CommentaryNode;97;-876.9938,1155.793;Inherit;False;1383.42;280;Normal ajustado para "iluminar" los bordes de las piedras;5;82;3;4;62;95;;1,1,1,1;0;0
+Node;AmplifyShaderEditor.RegisterLocalVarNode;81;173.3636,765.9448;Inherit;False;FloorParallaxUV;-1;True;1;0;FLOAT2;0,0;False;1;FLOAT2;0
+Node;AmplifyShaderEditor.GetLocalVarNode;82;-826.9938,1217.928;Inherit;False;81;FloorParallaxUV;1;0;OBJECT;;False;1;FLOAT2;0
+Node;AmplifyShaderEditor.SamplerNode;3;-593.7198,1205.793;Inherit;True;Property;_TexturaPisoNormal;TexturaPisoNormal;5;0;Create;True;0;0;0;False;0;False;-1;None;6f61d17e1a557be459e7e5c443ee4a29;True;0;False;bump;Auto;True;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.CommentaryNode;89;-869.3184,288.09;Inherit;False;902.4358;280;Albedo base del piso;3;84;12;86;;1,1,1,1;0;0
+Node;AmplifyShaderEditor.UnpackScaleNormalNode;4;-188.4121,1237.524;Inherit;False;2;0;FLOAT4;0,0,0,0;False;1;FLOAT;1;False;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
+Node;AmplifyShaderEditor.GetLocalVarNode;84;-819.3184,387.1017;Inherit;False;81;FloorParallaxUV;1;0;OBJECT;;False;1;FLOAT2;0
+Node;AmplifyShaderEditor.SamplerNode;12;-545.0914,338.09;Inherit;True;Property;_AlbedoPiso;AlbedoPiso;6;0;Create;True;0;0;0;False;0;False;-1;None;26795b2541ef42b4d98f8c2cf2cfdf91;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SimpleContrastOpNode;62;79.98599,1271.915;Inherit;False;2;1;COLOR;0,0,0,0;False;0;FLOAT;0.5;False;1;COLOR;0
+Node;AmplifyShaderEditor.RegisterLocalVarNode;86;-190.8826,350.3506;Inherit;False;AlbedoPisoRef;-1;True;1;0;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.RegisterLocalVarNode;95;278.4263,1262.52;Inherit;False;NormalContrast;-1;True;1;0;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.GetLocalVarNode;96;1117.697,821.5112;Inherit;False;95;NormalContrast;1;0;OBJECT;;False;1;COLOR;0
+Node;AmplifyShaderEditor.GetLocalVarNode;87;745.6052,569.601;Inherit;False;86;AlbedoPisoRef;1;0;OBJECT;;False;1;COLOR;0
+Node;AmplifyShaderEditor.GetLocalVarNode;100;752.7491,657.155;Inherit;False;-1;;1;0;OBJECT;;False;1;COLOR;0
+Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;1452.094,631.9246;Float;False;True;-1;6;ASEMaterialInspector;0;0;Standard;Mauro_Pari_Street_Floor;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Opaque;0.5;True;True;0;False;Opaque;;Geometry;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;True;2;15;10;25;False;0.5;True;0;0;False;-1;0;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;0;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;False;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;56;0;54;1
 WireConnection;56;1;55;0
+WireConnection;52;0;48;1
+WireConnection;52;1;48;2
 WireConnection;57;0;56;0
 WireConnection;57;1;52;0
 WireConnection;58;0;59;0
 WireConnection;58;1;57;0
-WireConnection;3;1;58;0
-WireConnection;47;1;58;0
+WireConnection;81;0;58;0
+WireConnection;3;1;82;0
 WireConnection;4;0;3;0
-WireConnection;12;1;58;0
-WireConnection;64;1;47;0
-WireConnection;71;0;64;0
+WireConnection;12;1;84;0
 WireConnection;62;1;4;0
-WireConnection;74;0;47;0
-WireConnection;68;0;12;0
-WireConnection;9;0;71;0
-WireConnection;9;1;68;0
-WireConnection;9;2;2;0
-WireConnection;60;0;74;0
-WireConnection;60;1;62;0
-WireConnection;60;2;2;0
-WireConnection;66;0;65;1
-WireConnection;66;1;67;0
-WireConnection;80;0;2;1
-WireConnection;0;0;9;0
-WireConnection;0;1;60;0
-WireConnection;0;4;66;0
-WireConnection;0;14;79;0
+WireConnection;86;0;12;0
+WireConnection;95;0;62;0
+WireConnection;0;0;87;0
+WireConnection;0;1;96;0
 ASEEND*/
-//CHKSM=95E66C520E96390FEA6C7A6202C1A559E3164171
+//CHKSM=467125545F87CF916713CE6A08373E12D4B2E45B

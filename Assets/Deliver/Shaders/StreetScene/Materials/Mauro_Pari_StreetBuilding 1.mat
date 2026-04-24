@@ -83,4 +83,5 @@ Material:
     m_Colors:
     - _Color0: {r: 0.33962262, g: 0.18676953, b: 0.12976147, a: 0}
     - _TilingBricks: {r: -1.5, g: -2, b: 0, a: 0}
+    - _WallColor: {r: 0.5283019, g: 0.21680315, b: 0.35198188, a: 1}
   m_BuildTextureStacks: []
