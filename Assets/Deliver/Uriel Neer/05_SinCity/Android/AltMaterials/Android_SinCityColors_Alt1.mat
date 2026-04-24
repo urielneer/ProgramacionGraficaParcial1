@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Android_SinCityColors
+  m_Name: Android_SinCityColors_Alt1
   m_Shader: {fileID: 4800000, guid: cb7351f46caf7ce45b3dca20f4bbc29a, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -33,19 +33,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EyesMasks:
-        m_Texture: {fileID: 2800000, guid: 374531217d418b9439ddeb5e42070add, type: 3}
+        m_Texture: {fileID: 2800000, guid: c376a2d96fb3e4241a9e94e21bbd377e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FleshMasks:
-        m_Texture: {fileID: 2800000, guid: fa848c05469974841be1fb631f2d63f5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6b8002cbe335d9748bb3e491c6bd3340, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GrayTexture:
-        m_Texture: {fileID: 2800000, guid: 354abdeef9dc86a48861d6bc27f2f0e5, type: 3}
+        m_Texture: {fileID: 2800000, guid: ab04b29b0c926c4448c2eecbb5a4a061, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetalMasks:
-        m_Texture: {fileID: 2800000, guid: c376a2d96fb3e4241a9e94e21bbd377e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 70f0a3d86727be240b4089da7b8a27dd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
@@ -96,7 +96,7 @@ Material:
     - _EmissiveFresnelBias: 0.422
     - _EmissiveFresnelPower: 0.2
     - _EmissiveFresnelScale: 0.14
-    - _EmissiveGlowStrength: 5
+    - _EmissiveGlowStrength: 1
     - _EmissiveHologramFrequency: 0
     - _EmissiveHologramSpeed: 0
     - _EmissiveHolographicBias: 0
@@ -104,7 +104,7 @@ Material:
     - _EmissiveHolographicScale: 0
     - _EmissiveHolographicSwitch: 0
     - _EmissivePulsationSwitch: 0
-    - _EmissivePulseSpeed: 3
+    - _EmissivePulseSpeed: 1
     - _EnvironmentalShadowIntensity: 0.53
     - _HologramDirection: 0
     - _OutlineThickness: 0.01
@@ -118,9 +118,9 @@ Material:
     - _ClothChannelG: {r: 1, g: 1, b: 1, a: 1}
     - _ClothChannelR: {r: 0.2812211, g: 0.3197634, b: 0.3490566, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
-    - _EyeChannelB: {r: 1, g: 0.95261276, b: 0.21226418, a: 1}
-    - _EyeChannelG: {r: 1, g: 0.3151406, b: 0, a: 1}
-    - _EyeChannelR: {r: 1, g: 0.010550499, b: 0, a: 1}
+    - _EyeChannelB: {r: 1, g: 0, b: 0.8064976, a: 1}
+    - _EyeChannelG: {r: 1, g: 0, b: 0.58695936, a: 1}
+    - _EyeChannelR: {r: 0.45748186, g: 0, b: 1, a: 1}
     - _FleshChannelB: {r: 0.254717, g: 0.23905043, b: 0.21266466, a: 1}
     - _FleshChannelG: {r: 0, g: 0, b: 0, a: 1}
     - _FleshChannelR: {r: 0.6132076, g: 0.57502675, b: 0.57502675, a: 1}
