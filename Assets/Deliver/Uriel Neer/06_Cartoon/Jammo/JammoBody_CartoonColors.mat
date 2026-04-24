@@ -80,7 +80,7 @@ Material:
     - _EmissiveHolographicSwitch: 1
     - _EmissivePulsationSwitch: 0
     - _EmissivePulseSpeed: 5
-    - _EnvironmentalShadowIntensity: 0.846
+    - _EnvironmentalShadowIntensity: 0.791
     - _HologramDirection: 0
     - _OutlineThickness: 0.0005
     - _OutlineWidth1: 0.02
@@ -91,7 +91,7 @@ Material:
     - _ShadowLength2: 0.366
     - __dirty: 0
     m_Colors:
-    - _EmissiveColor: {r: 0.41852665, g: 0, b: 1, a: 1}
+    - _EmissiveColor: {r: 0.72186327, g: 0, b: 1, a: 1}
     - _EmissiveNeonColor: {r: 0.43862855, g: 1, b: 0, a: 1}
     - _LightTint: {r: 1, g: 1, b: 1, a: 0}
     - _OutlineTint1: {r: 0.5294118, g: 0.5294118, b: 0.5294118, a: 0}

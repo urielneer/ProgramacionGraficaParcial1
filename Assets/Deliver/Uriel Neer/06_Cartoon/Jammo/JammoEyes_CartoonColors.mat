@@ -82,7 +82,7 @@ Material:
     - _EmissivePulseSpeed: 3
     - _EnvironmentalShadowIntensity: 0.916
     - _HologramDirection: 0
-    - _OutlineThickness: 1
+    - _OutlineThickness: 0
     - _OutlineWidth1: 0.02
     - _ShadowAlpha0: 0.77
     - _ShadowIntensity: 0.847
