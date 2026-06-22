@@ -57,7 +57,7 @@ Shader "Custom/Distance"
 			float4 ase_screenPosNorm = ase_screenPos / ase_screenPos.w;
 			ase_screenPosNorm.z = ( UNITY_NEAR_CLIP_VALUE >= 0 ) ? ase_screenPosNorm.z : ase_screenPosNorm.z * 0.5 + 0.5;
 			float temp_output_4_0 = ( distance( ase_screenPosNorm , float4( _PlayerScreenPos, 0.0 , 0.0 ) ) - _CutoutSize );
-			float4 color19 = IsGammaSpace() ? float4(1,0.5001359,0,0) : float4(1,0.2141669,0,0);
+			float4 color19 = IsGammaSpace() ? float4(1,0.5001359,0,1) : float4(1,0.2141669,0,1);
 			o.Emission = ( ( ( 1.0 - ( temp_output_4_0 - _OffsetBorder ) ) * color19 ) - float4( 0,0,0,0 ) ).rgb;
 			o.Alpha = 1;
 			float2 clipScreen7 = ase_screenPosNorm.xy * _ScreenParams.xy;
@@ -74,10 +74,10 @@ Shader "Custom/Distance"
 }
 /*ASEBEGIN
 Version=18900
-362;73;645;536;136.4308;439.1278;1.9;False;False
+171;73;693;536;-219.0595;568.3584;1.187668;False;False
 Node;AmplifyShaderEditor.CommentaryNode;30;-3.464401,-212.2609;Inherit;False;1114.477;508.6625;Agujero por Posicion;8;15;1;3;2;4;5;6;7;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.ScreenPosInputsNode;1;46.53561,-162.261;Float;False;0;False;0;5;FLOAT4;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.Vector2Node;3;57.11732,-3.899539;Inherit;False;Global;_PlayerScreenPos;_PlayerScreenPos;1;0;Create;True;0;0;0;False;0;False;0.5,0.5;0.5,0.4422649;0;3;FLOAT2;0;FLOAT;1;FLOAT;2
+Node;AmplifyShaderEditor.Vector2Node;3;57.11732,-3.899539;Inherit;False;Global;_PlayerScreenPos;_PlayerScreenPos;1;0;Create;True;0;0;0;False;0;False;0.5,0.5;0.5,0.4422908;0;3;FLOAT2;0;FLOAT;1;FLOAT;2
 Node;AmplifyShaderEditor.CommentaryNode;28;42.4004,-553.821;Inherit;False;1091.836;350.2817;Borde;6;22;27;17;18;20;19;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.DistanceOpNode;2;264.7,-106.0002;Inherit;False;2;0;FLOAT4;0,0,0,0;False;1;FLOAT2;0,0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;5;292.9393,-26.14641;Inherit;False;Property;_CutoutSize;_CutoutSize ;1;0;Create;True;0;0;0;False;0;False;0.1;0;0;0.135;0;1;FLOAT;0
@@ -85,7 +85,7 @@ Node;AmplifyShaderEditor.RangedFloatNode;22;92.40043,-400.5694;Inherit;False;Pro
 Node;AmplifyShaderEditor.SimpleSubtractOpNode;4;430.0532,-114.2526;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleSubtractOpNode;27;400.6476,-404.052;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.OneMinusNode;17;534.2546,-503.8203;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.ColorNode;19;570.389,-415.5386;Inherit;False;Constant;_Color2;Color 2;4;0;Create;True;0;0;0;False;0;False;1,0.5001359,0,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.ColorNode;19;570.389,-415.5386;Inherit;False;Constant;_Color2;Color 2;4;0;Create;True;0;0;0;False;0;False;1,0.5001359,0,1;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;18;730.0916,-481.8729;Inherit;False;2;2;0;FLOAT;0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.SmoothstepOpNode;6;585.3302,-100.0282;Inherit;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.DitheringNode;7;794.5331,-79.44975;Inherit;False;0;False;4;0;FLOAT;0;False;1;SAMPLER2D;;False;2;FLOAT4;0,0,0,0;False;3;SAMPLERSTATE;;False;1;FLOAT;0
@@ -108,4 +108,4 @@ WireConnection;0;0;15;0
 WireConnection;0;2;20;0
 WireConnection;0;10;7;0
 ASEEND*/
-//CHKSM=F0A3919BB961BF4E5FD0C12A1B12A24DAE10C093
+//CHKSM=21C7873D9C2465D47B12A889ED4C07A7A4C2F5A6
