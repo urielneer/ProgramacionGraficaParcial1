@@ -5,12 +5,6 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class Player_Movement : MonoBehaviour
 {
-    [Header("Camera")]
-    public Camera playerCamera;
-    public Transform cameraPivot;
-    public float lookSpeed = 2f;
-    public float lookXLimit = 45f;
-
     [Header("Movement")]
     public float walkSpeed = 6f;
     public float runSpeed = 12f;
@@ -45,7 +39,6 @@ public class Player_Movement : MonoBehaviour
     void Update()
     {
         HandleMovement();
-        HandleCamera();
     }
 
     private void HandleMovement()
@@ -95,15 +88,4 @@ public class Player_Movement : MonoBehaviour
         characterController.Move(moveDirection * Time.deltaTime);
     }
 
-    private void HandleCamera()
-    {
-        if (!canMove)
-            return;
-
-        rotationX -= Input.GetAxis("Mouse Y") * lookSpeed;
-        rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
-
-        cameraPivot.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
-        transform.Rotate(0f, Input.GetAxis("Mouse X") * lookSpeed, 0f);
-    }
 }
