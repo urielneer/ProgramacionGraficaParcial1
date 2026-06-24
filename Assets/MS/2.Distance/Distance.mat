@@ -25,7 +25,7 @@ Material:
     - _AnchoBorde: 0.1
     - _Cutoff: 0.5
     - _CutoutSize: 0.0249
-    - _OffsetBorder: 0
+    - _OffsetBorder: 0.0305
     - __dirty: 0
     m_Colors:
     - _Color0: {r: 1, g: 0.47450978, b: 0, a: 0}
