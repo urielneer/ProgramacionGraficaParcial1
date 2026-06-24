@@ -52,5 +52,5 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _GhostColor: {r: 1, g: 1, b: 1, a: 0}
+    - _GhostColor: {r: 0.09011215, g: 0.4245283, b: 0.09998134, a: 0}
   m_BuildTextureStacks: []
