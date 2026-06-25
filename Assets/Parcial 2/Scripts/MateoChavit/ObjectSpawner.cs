@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ObjectSpawner : MonoBehaviour
@@ -7,6 +8,8 @@ public class ObjectSpawner : MonoBehaviour
     [Header("Assets")]
     public Mesh[] meshes;
     public Material[] mats;
+    public TextMeshProUGUI targetMeshText;
+    public TextMeshProUGUI targetMaterialText;
 
     [Header("Spawn Settings")]
     public int objectCount = 20;
@@ -114,6 +117,10 @@ public class ObjectSpawner : MonoBehaviour
 
             int targetCount = sceneObjects.FindAll(o => o.isTarget).Count;
         }
+
+        targetMeshText.text = meshes[specialMeshIndex].name;
+        targetMaterialText.text = mats[specialMatIndex].name;
+
         Debug.Log($"Objetos generados: {sceneObjects.Count} | Targets: {targetIndex} | Target Data: {specialMeshIndex},{specialMatIndex}");
     }
 
