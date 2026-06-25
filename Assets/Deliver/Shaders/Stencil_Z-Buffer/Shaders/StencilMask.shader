@@ -21,8 +21,8 @@ Shader "StencilMask"
 		AlphaToMask Off
 		Cull Back
 		ColorMask 0
-		ZWrite On
-		ZTest LEqual
+		ZWrite Off
+		ZTest Greater
 		Offset 0 , 0
 		Stencil
 		{
@@ -122,6 +122,6 @@ Shader "StencilMask"
 /*ASEBEGIN
 Version=18900
 886;73;1033;918;348;459;1;True;False
-Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;1;198,-119;Float;False;True;-1;2;ASEMaterialInspector;100;1;StencilMask;0770190933193b94aaa3065e307002fa;True;Unlit;0;0;Unlit;2;False;True;0;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;True;0;False;-1;0;False;-1;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;True;True;False;False;False;False;0;False;-1;False;False;False;False;False;False;True;True;True;1;False;-1;255;False;-1;255;False;-1;7;False;-1;3;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;False;True;1;False;-1;True;3;False;-1;True;True;0;False;-1;0;False;-1;True;1;RenderType=Opaque=RenderType;True;2;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;1;LightMode=ForwardBase;False;0;;0;0;Standard;1;Vertex Position,InvertActionOnDeselection;1;0;1;True;False;;False;0
+Node;AmplifyShaderEditor.TemplateMultiPassMasterNode;1;198,-119;Float;False;True;-1;2;ASEMaterialInspector;100;1;StencilMask;0770190933193b94aaa3065e307002fa;True;Unlit;0;0;Unlit;2;False;True;0;1;False;-1;0;False;-1;0;1;False;-1;0;False;-1;True;0;False;-1;0;False;-1;False;False;False;False;False;False;False;False;False;True;0;False;-1;False;True;0;False;-1;True;True;False;False;False;False;0;False;-1;False;False;False;False;False;False;True;True;True;1;False;-1;255;False;-1;255;False;-1;7;False;-1;3;False;-1;1;False;-1;1;False;-1;7;False;-1;1;False;-1;1;False;-1;1;False;-1;True;True;2;False;-1;True;2;False;-1;True;True;0;False;-1;0;False;-1;True;1;RenderType=Opaque=RenderType;True;2;0;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;1;LightMode=ForwardBase;False;0;;0;0;Standard;1;Vertex Position,InvertActionOnDeselection;1;0;1;True;False;;False;0
 ASEEND*/
-//CHKSM=37FE3C75CFBD21838785AC75AA9F258024491C44
+//CHKSM=CEB049F3F11F8821523444EB23D386F47AE91784
