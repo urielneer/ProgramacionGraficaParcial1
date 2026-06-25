@@ -58,5 +58,9 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+<<<<<<< HEAD:Assets/Parcial 1/Deliver/Marcos_Serial/Marcos_Serial_Ghost.mat
     - _GhostColor: {r: 0, g: 1, b: 0.1559627, a: 0}
+=======
+    - _GhostColor: {r: 0.09011215, g: 0.4245283, b: 0.09998134, a: 0}
+>>>>>>> MarcosSerial:Assets/Deliver/Materials/GhostScene/Marcos_Serial_Ghost.mat
   m_BuildTextureStacks: []
