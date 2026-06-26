@@ -9,8 +9,6 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: PostProcessCamera
   m_Shader: {fileID: 4800000, guid: f439e93adbb968c4cadd559858ee3530, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -19,7 +17,6 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: _Damage_VignetteBlurr
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -33,7 +30,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Damage_Alpha: 1
+    - _Damage_Alpha: 0
     - _DispX: 0
     - _DispY: 0
     - _DistXMax: 0.0001
@@ -58,7 +55,7 @@ Material:
     - _FlashBang_MinBorderSize: 0.061
     - _FlashBang_MinSaturation: 0.569
     - _Float0: 2
-    - _Heal_Alpha: 1
+    - _Heal_Alpha: 0
     - _Heal_GradientTimeScale: 2
     - _Heal_LineFrequency: 7
     - _Heal_LineSpeed: 0.45
@@ -74,10 +71,10 @@ Material:
     - _TimeScale: 1
     - _UseCamera_Alpha: 1
     - _UseCamera_RecRadius: 19000
-    - _WakeUp_Alpha: 1
+    - _WakeUp_Alpha: 0
     - _WakeUp_Blinking: 0.5
     - _WakeUp_EyeRadius: 150
-    - _WakeUp_Time: 2
+    - _WakeUp_Time: 0.5
     - __dirty: 0
     - _ispix: 1
     m_Colors:
