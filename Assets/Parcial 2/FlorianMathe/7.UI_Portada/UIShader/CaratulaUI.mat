@@ -92,8 +92,8 @@ Material:
     m_Floats:
     - _ColorMask: 15
     - _DistortAmount: 0.996
-    - _ProtaOutlineScale: 1.08
-    - _ProtaScale: 0.43
+    - _ProtaOutlineScale: 1.06
+    - _ProtaScale: 0.38
     - _PulseAmp: 0.107
     - _PulseSpeed: 0.96
     - _Stencil: 0
@@ -105,8 +105,8 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ProtaFilter: {r: 0.2898821, g: 0.43750244, b: 0.72300005, a: 1}
-    - _ProtaOffset: {r: 0, g: -0.74, b: 0, a: 0}
-    - _ProtaOffset1: {r: 0, g: -0.69, b: 0, a: 0}
+    - _ProtaOffset: {r: 0, g: -0.49, b: 0, a: 0}
+    - _ProtaOffset1: {r: 0, g: -0.46, b: 0, a: 0}
     - _ProtaOutlineColror: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
     - _TitleFlowColor: {r: 0, g: 0.28276756, b: 0.5849056, a: 1}
   m_BuildTextureStacks: []

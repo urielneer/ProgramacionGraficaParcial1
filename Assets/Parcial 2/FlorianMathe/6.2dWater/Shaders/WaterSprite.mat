@@ -39,10 +39,13 @@ Material:
     m_Ints: []
     m_Floats:
     - PixelSnap: 0
+    - _Opacity: 0.5882353
     - _SplashPosX: 0.46
     - _SplashStrength: 1.96
     - _WaterHeight: 0.7412553
     - _WaveHeight: 0.052
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
+    - _WaterTint: {r: 0.759, g: 0.96016526, b: 1, a: 1}
   m_BuildTextureStacks: []

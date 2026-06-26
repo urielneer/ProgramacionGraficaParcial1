@@ -9,7 +9,7 @@ public class WaterSplash : MonoBehaviour
     public float idleInside = 0.1f;  // minimo mientras sigue dentro del agua
     public float decay = 6f;         // que tan rapido cae el pico
 
-    SpriteRenderer sr;   // el del agua (este mismo objeto)
+    SpriteRenderer sr;   
     float strength;
     float peak;          // objetivo de la subida (se setea al entrar/salir)
     bool rising;         // true = en fase de subida; false = decayendo
@@ -24,12 +24,12 @@ public class WaterSplash : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D c)
     {
-        if (c.CompareTag("Player")) { inside = true; player = c.transform; peak = target; rising = true; } // dispara subida al entrar
+        if (c.CompareTag("Player")) { inside = true; player = c.transform; peak = target; rising = true; } 
     }
 
     void OnTriggerExit2D(Collider2D c)
     {
-        if (c.CompareTag("Player")) { inside = false; peak = target; rising = true; } // dispara subida al salir
+        if (c.CompareTag("Player")) { inside = false; peak = target; rising = true; } 
     }
 
     void Update()
@@ -50,8 +50,8 @@ public class WaterSplash : MonoBehaviour
 
         if (inside && player)
         {
-            float left  = sr.bounds.min.x;   // borde izq en mundo (con escala)
-            float right = sr.bounds.max.x;   // borde der  en mundo (con escala)
+            float left  = sr.bounds.min.x;  
+            float right = sr.bounds.max.x;   
             float x = Mathf.InverseLerp(left, right, player.position.x); // 0-1
             waterMat.SetFloat("_SplashPosX", x);
         }
