@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641258, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -247,11 +247,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5428491675892507904, guid: 5a8186497968d344fb33b3e3ea0d5e94, type: 3}
       propertyPath: sceneNames.Array.data[0]
-      value: 2.Distance
+      value: Distance
       objectReference: {fileID: 0}
     - target: {fileID: 5428491675892507904, guid: 5a8186497968d344fb33b3e3ea0d5e94, type: 3}
       propertyPath: sceneNames.Array.data[1]
-      value: 1-DrawMeshDistanceRenderTexture
+      value: Draw Mesh Distance Render Texture
       objectReference: {fileID: 0}
     - target: {fileID: 5428491675892507904, guid: 5a8186497968d344fb33b3e3ea0d5e94, type: 3}
       propertyPath: sceneNames.Array.data[2]
@@ -259,7 +259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5428491675892507904, guid: 5a8186497968d344fb33b3e3ea0d5e94, type: 3}
       propertyPath: sceneNames.Array.data[3]
-      value: Card
+      value: Post Processes
       objectReference: {fileID: 0}
     - target: {fileID: 5428491675892507904, guid: 5a8186497968d344fb33b3e3ea0d5e94, type: 3}
       propertyPath: sceneNames.Array.data[4]
@@ -271,23 +271,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5428491675892507904, guid: 5a8186497968d344fb33b3e3ea0d5e94, type: 3}
       propertyPath: sceneNames.Array.data[6]
-      value: 7.Stencil
+      value: Stencil
       objectReference: {fileID: 0}
     - target: {fileID: 5428491675892507904, guid: 5a8186497968d344fb33b3e3ea0d5e94, type: 3}
       propertyPath: sceneNames.Array.data[7]
-      value: Postprocesses
+      value: Card
       objectReference: {fileID: 0}
     - target: {fileID: 5428491675892507904, guid: 5a8186497968d344fb33b3e3ea0d5e94, type: 3}
       propertyPath: sceneNames.Array.data[8]
-      value: 9_Projector_Caustics_Joaquin_Ivanko
+      value: ' Projector Caustics'
       objectReference: {fileID: 0}
     - target: {fileID: 5428491675892507904, guid: 5a8186497968d344fb33b3e3ea0d5e94, type: 3}
       propertyPath: sceneNames.Array.data[9]
-      value: Window_Projector
+      value: Window Projector
       objectReference: {fileID: 0}
     - target: {fileID: 5428491675892507904, guid: 5a8186497968d344fb33b3e3ea0d5e94, type: 3}
       propertyPath: sceneNames.Array.data[10]
-      value: 11_Projector_Scanner_Joaquin_Ivanko
+      value: Projector Scanner
       objectReference: {fileID: 0}
     - target: {fileID: 9138430991426083301, guid: 5a8186497968d344fb33b3e3ea0d5e94, type: 3}
       propertyPath: m_text

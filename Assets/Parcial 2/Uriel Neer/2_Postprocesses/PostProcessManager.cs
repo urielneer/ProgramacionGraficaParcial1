@@ -43,7 +43,7 @@ public class PostProcessManager : MonoBehaviour
 
     [SerializeField] private Material material;
 
-    void Awake()
+    void Start()
     {
         material.SetColor(Shader.PropertyToID("_FlashBangAction1"),   new Color(0, 0, 0, 0));
         material.SetColor(Shader.PropertyToID("_DamageAction1"),      new Color(0, 0, 0, 0));

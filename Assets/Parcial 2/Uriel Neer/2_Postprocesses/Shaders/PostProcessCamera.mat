@@ -69,10 +69,10 @@ Material:
     - _SatMax: 1
     - _SatMin: 0.687
     - _TimeScale: 1
-    - _UseCamera_Alpha: 1
+    - _UseCamera_Alpha: 0
     - _UseCamera_RecRadius: 19000
     - _WakeUp_Alpha: 0
-    - _WakeUp_Blinking: 0.5
+    - _WakeUp_Blinking: 0.7
     - _WakeUp_EyeRadius: 150
     - _WakeUp_Time: 0.5
     - __dirty: 0
