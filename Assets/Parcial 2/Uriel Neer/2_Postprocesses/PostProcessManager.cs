@@ -61,6 +61,38 @@ public class PostProcessManager : MonoBehaviour
     }
     void Update()
     {
+        // Input //
+            // Check if the user typed any characters this frame
+            string input = Input.inputString;
+
+            if (!string.IsNullOrEmpty(input))
+            {
+                // Take the first character typed
+                char keyChar = input[0];
+
+                // Switch based on characters '1' through '6'
+                switch (keyChar)
+                {
+                    case '1':
+                        IsFlashBanged = true;
+                        break;
+                    case '2':
+                        IsDamaged = true;
+                        break;
+                    case '3':
+                        IsHealing = true;
+                        break;
+                    case '4':
+                        IsWakingUp = true;
+                        break;
+                    case '5':
+                         IsUsingCamera = true;
+                        break;
+                    case '6':
+                        IsDrunk = true;
+                        break;
+                }
+            }
         // Store Colors //
             Color FBColor1 = material.GetColor(Shader.PropertyToID("_FlashBangAction1"));
             Color FBColor2 = material.GetColor(Shader.PropertyToID("_FlashBangAction2"));
