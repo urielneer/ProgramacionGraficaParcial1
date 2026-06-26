@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Parcial 2/NahuelMarcoSerial/2.Distance/2.Distance.unity
-    guid: d4fde9e1d4bf54cb982ed32f70684f7f
-  - enabled: 1
     path: Assets/Parcial 2/MateoChavit/1-DrawMeshDistanceRenderTexture.unity
     guid: c60daca50fdb04349910f08bd98a14c6
+  - enabled: 1
+    path: Assets/Parcial 2/NahuelMarcoSerial/2.Distance/2.Distance.unity
+    guid: d4fde9e1d4bf54cb982ed32f70684f7f
   - enabled: 1
     path: Assets/Parcial 2/MauroPari/Stencil_Z-Buffer/Stencli_Z-Buffer.unity
     guid: 9a92bca32b0af944687955f80b5acf5c

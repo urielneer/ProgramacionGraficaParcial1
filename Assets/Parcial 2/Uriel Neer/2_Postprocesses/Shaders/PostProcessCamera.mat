@@ -63,18 +63,18 @@ Material:
     - _IsDrunk: 0
     - _IsFlashBanged: 0
     - _IsHealing: 0
-    - _IsUsingCamera: 0
+    - _IsUsingCamera: 1
     - _Radius1: 30000
     - _Sat: 0.5
     - _SatMax: 1
     - _SatMin: 0.687
     - _TimeScale: 1
-    - _UseCamera_Alpha: 0
+    - _UseCamera_Alpha: 1
     - _UseCamera_RecRadius: 42000
-    - _WakeUp_Alpha: 0
+    - _WakeUp_Alpha: 1
     - _WakeUp_Blinking: 0.7
     - _WakeUp_EyeRadius: 150
-    - _WakeUp_Time: 0.5
+    - _WakeUp_Time: 4
     - __dirty: 0
     - _ispix: 1
     m_Colors:
@@ -109,7 +109,7 @@ Material:
     - _Heal_ValueFrame: {r: 0.2, g: 0, b: 0, a: 0}
     - _Pix: {r: 1000, g: 1000, b: 0, a: 0}
     - _TimeFrames: {r: 0.4, g: 1.25, b: 15, a: 19}
-    - _UseCameraAction1: {r: 0, g: 0, b: 0, a: 0}
+    - _UseCameraAction1: {r: 0, g: 1, b: 0, a: 0}
     - _UseCameraAction2: {r: 0, g: 0, b: 0, a: 0}
     - _UseCamera_Pixels: {r: 4096, g: 1024, b: 0, a: 0}
     - _UseCamera_RecDisplacement: {r: 0.43, g: -0.385, b: 0, a: 0}
