@@ -7,8 +7,8 @@ ShaderImporter:
   - _FlowTexture: {fileID: 2800000, guid: 7b0842e3d0da6bf468f08b4a0ad9db9b, type: 3}
   - _BaseImage: {fileID: 2800000, guid: 80ab37a9e4f49c842903bb43bdd7bcd2, type: 3}
   - _DistortNormal: {fileID: 2800000, guid: 76a10595be7e2c74aa376d4267f35bbf, type: 3}
-  - _DistortMask: {fileID: 2800000, guid: 596678c53fd54a640bf95ba7dfafd092, type: 3}
   nonModifiableTextures: []
+  preprocessorOverride: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

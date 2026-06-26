@@ -9,8 +9,6 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: CaratulaUI
   m_Shader: {fileID: 4800000, guid: 2ae8d501aa298544d9155b06bec97d10, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -19,12 +17,11 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseImage:
-        m_Texture: {fileID: 2800000, guid: 80ab37a9e4f49c842903bb43bdd7bcd2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9006211dc92524815a60c5a0faa52d2e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DistortMask:
@@ -40,15 +37,23 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FlowTexture:
-        m_Texture: {fileID: 2800000, guid: 7b0842e3d0da6bf468f08b4a0ad9db9b, type: 3}
-        m_Scale: {x: 1.44, y: 1.65}
-        m_Offset: {x: 0.1, y: -0.7}
+        m_Texture: {fileID: 2800000, guid: 62f6a983efc26459199613504e90c25b, type: 3}
+        m_Scale: {x: 1.05, y: 3}
+        m_Offset: {x: 0, y: -1.91}
     - _FlowandMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ProtaTexture:
+        m_Texture: {fileID: 2800000, guid: 5160ff8a6255742bfbe77eeb548c7577, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 3.97, y: 0}
+    - _ProtaTexture1:
+        m_Texture: {fileID: 2800000, guid: 5160ff8a6255742bfbe77eeb548c7577, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RampText:
@@ -75,10 +80,22 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _TitleFill:
+        m_Texture: {fileID: 2800000, guid: be323a7d39e3c4482924497c221d717b, type: 3}
+        m_Scale: {x: 1.05, y: 2.99}
+        m_Offset: {x: 0, y: -1.91}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _ColorMask: 15
-    - _DistortAmount: 0.961
+    - _DistortAmount: 0.996
+    - _ProtaOutlineScale: 1.08
+    - _ProtaScale: 0.43
+    - _PulseAmp: 0.107
+    - _PulseSpeed: 0.96
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -87,4 +104,9 @@ Material:
     - _UseUIAlphaClip: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ProtaFilter: {r: 0.2898821, g: 0.43750244, b: 0.72300005, a: 1}
+    - _ProtaOffset: {r: 0, g: -0.74, b: 0, a: 0}
+    - _ProtaOffset1: {r: 0, g: -0.69, b: 0, a: 0}
+    - _ProtaOutlineColror: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
+    - _TitleFlowColor: {r: 0, g: 0.28276756, b: 0.5849056, a: 1}
   m_BuildTextureStacks: []
