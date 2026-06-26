@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 64ba9418ababe124eb07378abbbac875, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 2e797764dec5eff488df550a079e9f90, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -58429,8 +58429,9 @@ Transform:
   - {fileID: 116257965}
   - {fileID: 1976713820}
   - {fileID: 765204923}
+  - {fileID: 1100789643}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &795347761
 MonoBehaviour:
@@ -82881,11 +82882,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100789641}
   m_LocalRotation: {x: 0.11682718, y: 0.23293683, z: -0.96448344, w: 0.04317017}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 58.91, y: 150.55, z: -204.98999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 795347760}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 152.651, y: 166.64, z: 1.8609924}
 --- !u!1001 &1100802162
@@ -102225,7 +102226,7 @@ Transform:
   m_Children:
   - {fileID: 169032209}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1358033742
 PrefabInstance:
@@ -156875,6 +156876,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7565049331473866627, guid: 02ea9df4c8df726449e3c0af906d766f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8698518605262857452, guid: 02ea9df4c8df726449e3c0af906d766f, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8698518605262857452, guid: 02ea9df4c8df726449e3c0af906d766f, type: 3}
+      propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
