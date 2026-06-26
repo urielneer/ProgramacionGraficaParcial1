@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Uriel_FlashBang_4_ClearEffect
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity
+    Asset Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=18900\n2131;73;1047;533.4;1443.051;1943.177;2.469526;True;False\nNode;AmplifyShaderEditor.CommentaryNode;304;-399.7158,-1408.794;Inherit;False;542.0629;238.297;HSV;2;281;282;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;303;-220.4744,-1672.016;Inherit;False;416.2699;234.0815;Variables;4;1;215;298;299;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CommentaryNode;302;-332.0211,-1151.473;Inherit;False;1144.004;463.0303;Gradient
+    Border;11;280;277;276;275;278;283;271;274;300;301;272;;1,1,1,1;0;0\nNode;AmplifyShaderEditor.FunctionNode;281;-197.653,-1353.497;Inherit;False;Uriel_HSVReadjustment;-1;;21;8b9acfc5fb713664a9fa50d7d5dae1d8;0;4;9;COLOR;0,0,0,0;False;10;FLOAT;1;False;11;FLOAT;1;False;12;FLOAT;1;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.DynamicAppendNode;280;-281.5289,-1069.551;Inherit;False;FLOAT2;4;0;FLOAT;0.0001;False;1;FLOAT;0.0002;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;277;451.4715,-1070.552;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.OneMinusNode;276;304.7606,-1070.552;Inherit;False;1;0;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;275;576.9824,-1101.473;Inherit;True;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.FunctionNode;278;-119.8655,-1069.963;Inherit;True;Uriel_SquareVignette;-1;;20;17b0e0e4548862a4b93ec1f50623876e;0;5;69;FLOAT2;0.125,0.135;False;70;FLOAT2;0.125,0.135;False;18;FLOAT2;0,0;False;31;INT;0;False;33;FLOAT2;0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.DynamicAppendNode;283;-282.0211,-983.9236;Inherit;False;FLOAT2;4;0;FLOAT;0.0001;False;1;FLOAT;0.0002;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.DynamicAppendNode;271;-281.1347,-904.296;Inherit;False;FLOAT2;4;0;FLOAT;0.5;False;1;FLOAT;0.5;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;274;162.1571,-1100.432;Inherit;False;2;2;0;FLOAT3;0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.FunctionInput;300;-106.0068,-804.4427;Inherit;False;Pixels;2;3;False;1;0;FLOAT2;1000,1000;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;301;-116.2731,-869.0789;Inherit;False;IsPixelated;0;2;False;1;0;INT;0;False;1;INT;0\nNode;AmplifyShaderEditor.GetLocalVarNode;272;291.0043,-1011.106;Inherit;False;298;Color;1;0;OBJECT;;False;1;COLOR;0\nNode;AmplifyShaderEditor.FunctionInput;1;-170.4744,-1621.519;Inherit;False;ScreenRGB;5;0;False;1;0;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;215;-28.20455,-1622.016;Inherit;False;Screen;-1;True;1;0;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.RegisterLocalVarNode;298;-37.29433,-1554.073;Inherit;False;Color;-1;True;1;0;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.FunctionInput;299;-148.1373,-1553.935;Inherit;False;Clolor;5;1;False;1;0;COLOR;0,0,0,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.GetLocalVarNode;282;-349.7158,-1358.794;Inherit;False;215;Screen;1;0;OBJECT;;False;1;COLOR;0\nNode;AmplifyShaderEditor.FunctionOutput;0;778.0485,-1103.517;Inherit;True;True;-1;Output;0;False;1;0;COLOR;0,0,0,0;False;1;COLOR;0\nWireConnection;281;9;282;0\nWireConnection;277;0;276;0\nWireConnection;277;1;272;0\nWireConnection;276;0;278;0\nWireConnection;275;0;274;0\nWireConnection;275;1;277;0\nWireConnection;278;69;280;0\nWireConnection;278;70;283;0\nWireConnection;278;18;271;0\nWireConnection;278;31;301;0\nWireConnection;278;33;300;0\nWireConnection;274;0;281;0\nWireConnection;274;1;278;0\nWireConnection;215;0;1;0\nWireConnection;298;0;299;0\nWireConnection;0;0;275;0\nASEEND*/\n//CHKSM=97D70F390B8EA5729970DA9E1578AE670027DE01"
+  m_functionName: 
+  m_description: 
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_customEdited: 0
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesIndex: -1
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 3
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0
