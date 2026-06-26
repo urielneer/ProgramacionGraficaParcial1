@@ -255,7 +255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5428491675892507904, guid: 5a8186497968d344fb33b3e3ea0d5e94, type: 3}
       propertyPath: sceneNames.Array.data[2]
-      value: Stencli_Z-Buffer
+      value: Stencil Z Buffer
       objectReference: {fileID: 0}
     - target: {fileID: 5428491675892507904, guid: 5a8186497968d344fb33b3e3ea0d5e94, type: 3}
       propertyPath: sceneNames.Array.data[3]
@@ -291,7 +291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9138430991426083301, guid: 5a8186497968d344fb33b3e3ea0d5e94, type: 3}
       propertyPath: m_text
-      value: 2.Distance
+      value: Distance
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a8186497968d344fb33b3e3ea0d5e94, type: 3}

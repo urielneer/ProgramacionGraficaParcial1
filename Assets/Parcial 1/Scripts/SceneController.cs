@@ -23,7 +23,17 @@ public class SceneController : Singleton<SceneController>
     public UnityEvent OnLoadFinished;
 
     private bool isTransitioning = false;
+    void Awake()
+    {
+        // Fetch the native resolution of the primary monitor
+        Resolution nativeRes = Screen.currentResolution;
 
+        // Force the game to run at the true resolution, preventing OS scaling crops
+        if (Screen.fullScreen)
+        {
+            Screen.SetResolution(nativeRes.width, nativeRes.height, FullScreenMode.FullScreenWindow);
+        }
+    }
     void OnEnable()
     {
         DontDestroyOnLoad(transitionAnimator.gameObject);
