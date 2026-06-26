@@ -70,7 +70,7 @@ Material:
     - _SatMin: 0.687
     - _TimeScale: 1
     - _UseCamera_Alpha: 0
-    - _UseCamera_RecRadius: 19000
+    - _UseCamera_RecRadius: 42000
     - _WakeUp_Alpha: 0
     - _WakeUp_Blinking: 0.7
     - _WakeUp_EyeRadius: 150
@@ -79,14 +79,14 @@ Material:
     - _ispix: 1
     m_Colors:
     - _DamageAction1: {r: 0, g: 0, b: 0, a: 0}
-    - _Damage_Color1: {r: 0.8113207, g: 0, b: 0, a: 1}
-    - _Damage_Color2: {r: 0.3962257, g: 0, b: 0.027643716, a: 1}
-    - _Damage_Color3: {r: 0.2924521, g: 0.027156329, b: 0, a: 1}
+    - _Damage_Color1: {r: 0.2264151, g: 0, b: 0, a: 1}
+    - _Damage_Color2: {r: 0.46226418, g: 0, b: 0, a: 1}
+    - _Damage_Color3: {r: 0.8867924, g: 0, b: 0, a: 1}
     - _Damage_Distortion: {r: 1, g: 2.13, b: 0, a: 0}
     - _Damage_FluctuationRange: {r: 0.1, g: 0.05, b: 0.075, a: 0}
     - _Damage_MaxRadiuses: {r: 1200, g: 1050, b: 900, a: 0}
     - _Damage_MinRadiuses: {r: 1100, g: 950, b: 800, a: 0}
-    - _Damage_Radiuses: {r: 620.8, g: 802.3, b: 917.8, a: 0}
+    - _Damage_Radiuses: {r: 2000, g: 1750, b: 1200, a: 0}
     - _Damage_Speeds: {r: 2, g: 2, b: 2, a: 0}
     - _Damage_VignetteBlurr: {r: 0, g: 0.42, b: 0, a: 0}
     - _Disp1: {r: 0, g: 0, b: 0, a: 0}
@@ -112,7 +112,7 @@ Material:
     - _UseCameraAction1: {r: 0, g: 0, b: 0, a: 0}
     - _UseCameraAction2: {r: 0, g: 0, b: 0, a: 0}
     - _UseCamera_Pixels: {r: 4096, g: 1024, b: 0, a: 0}
-    - _UseCamera_RecDisplacement: {r: 0.45, g: -0.385, b: 0, a: 0}
+    - _UseCamera_RecDisplacement: {r: 0.43, g: -0.385, b: 0, a: 0}
     - _UseCamera_RecDistortion: {r: 1, g: 1, b: 0, a: 0}
     - _Vector0: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _Vector1: {r: -0.098, g: 0.079, b: 0, a: 0}
