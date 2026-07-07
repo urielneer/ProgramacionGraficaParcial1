@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MainMonitor_Base
+  m_Name: Monitor 2
   m_Shader: {fileID: 4800000, guid: 0b82973cb6c554445857bdf977798d47, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -24,10 +24,6 @@ Material:
         m_Texture: {fileID: 2800000, guid: 7acb8f9a1f385b547857dcbff14d5598, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: 8aba6bb20faf8824d9d81946542f1ce1, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _NoiseTex:
         m_Texture: {fileID: 2800000, guid: 7acb8f9a1f385b547857dcbff14d5598, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -38,10 +34,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Curvature: 0.4
-    - _ScanlineCount: 200
-    - _ScanlineSpeed: 2
-    - _StaticAmount: 0.642
+    - _Curvature: 0.15
+    - _ScanlineCount: 0
+    - _ScanlineSpeed: 0
+    - _StaticAmount: 1
     - __dirty: 0
     m_Colors: []
   m_BuildTextureStacks: []

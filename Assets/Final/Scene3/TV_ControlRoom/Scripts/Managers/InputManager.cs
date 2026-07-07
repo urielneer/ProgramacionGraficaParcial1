@@ -22,11 +22,11 @@ namespace TVControlRoom.Managers
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 OnChannelUp?.Invoke();
             }
-            if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.Q))
             {
                 OnChannelDown?.Invoke();
             }
