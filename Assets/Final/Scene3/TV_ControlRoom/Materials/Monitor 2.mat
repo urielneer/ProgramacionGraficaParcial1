@@ -34,10 +34,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Curvature: 0.15
-    - _ScanlineCount: 0
-    - _ScanlineSpeed: 0
-    - _StaticAmount: 1
+    - _Curvature: 0
+    - _ScanlineCount: 400
+    - _ScanlineSpeed: 0.1
+    - _StaticAmount: 0
     - __dirty: 0
     m_Colors: []
   m_BuildTextureStacks: []
