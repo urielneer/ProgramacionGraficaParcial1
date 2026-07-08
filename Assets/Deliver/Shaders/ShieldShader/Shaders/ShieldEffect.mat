@@ -24,16 +24,20 @@ Material:
         m_Texture: {fileID: 2800000, guid: 67e2d28f7774f8f4080532d1a1aee0cf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _TextureSample2:
+        m_Texture: {fileID: 2800000, guid: 16eff3c63a515c242a5010f9d0cbc89e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BaseAlpha: 0.04
-    - _HexAlpha: 0.45
-    - _HexIntensity: 1.5
-    - _HexTiling: 2.29
-    - _RimIntensity: 2.5
-    - _RimPower: 0
+    - _BaseAlpha: 0
+    - _HexAlpha: 1
+    - _HexIntensity: 0
+    - _HexTiling: 2.75
+    - _RimIntensity: 3
+    - _RimPower: 0.721
     m_Colors:
-    - _BaseColor: {r: 0, g: 0.8167534, b: 1, a: 0}
-    - _HexColor: {r: 0, g: 0.681592, b: 1, a: 0}
-    - _RimColor: {r: 0, g: 0.7137255, b: 1, a: 0}
+    - _BaseColor: {r: 0, g: 1, b: 0.66946435, a: 0}
+    - _HexColor: {r: 0, g: 1, b: 0.796659, a: 0}
+    - _RimColor: {r: 0, g: 0.0625, b: 0.027941177, a: 1}
   m_BuildTextureStacks: []
