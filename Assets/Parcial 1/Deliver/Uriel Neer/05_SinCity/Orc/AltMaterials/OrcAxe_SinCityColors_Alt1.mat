@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OrcAxe_SinCityColors_Alt1
+  m_Shader: {fileID: 4800000, guid: cb7351f46caf7ce45b3dca20f4bbc29a, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlbedoTexture:
+        m_Texture: {fileID: 2800000, guid: a3a746109d9be264e8dba8820fb5a03e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BlueMaskPattern:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ClothMasks:
+        m_Texture: {fileID: 2800000, guid: c376a2d96fb3e4241a9e94e21bbd377e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EyesMasks:
+        m_Texture: {fileID: 2800000, guid: c376a2d96fb3e4241a9e94e21bbd377e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FleshMasks:
+        m_Texture: {fileID: 2800000, guid: c376a2d96fb3e4241a9e94e21bbd377e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GrayTexture:
+        m_Texture: {fileID: 2800000, guid: a3a746109d9be264e8dba8820fb5a03e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetalMasks:
+        m_Texture: {fileID: 2800000, guid: b311e022bdf393e43b8aabea9ee9f011, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: 00097d40758fa40458bfc42406811d14, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PencilMask:
+        m_Texture: {fileID: 2800000, guid: 63af688346670ce469b96e962b8f48c9, type: 3}
+        m_Scale: {x: 10, y: 10}
+        m_Offset: {x: 0, y: 0}
+    - _PencilRGBMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PlaidMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RedMaskPattern:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WoodMasks:
+        m_Texture: {fileID: 2800000, guid: c9f6a4a360209b441abc4066007f7c4e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _EmissionClothChannelB: 0
+    - _EmissionClothChannelG: 0
+    - _EmissionClothChannelR: 0
+    - _EmissionEyesChannelB: 0
+    - _EmissionEyesChannelG: 0
+    - _EmissionEyesChannelR: 0
+    - _EmissionFleshChannelB: 0
+    - _EmissionFleshChannelG: 0
+    - _EmissionFleshChannelR: 0
+    - _EmissionMetalChannelB: 0
+    - _EmissionMetalChannelG: 1
+    - _EmissionMetalChannelR: 0
+    - _EmissionWoodChannelB: 0
+    - _EmissionWoodChannelG: 0
+    - _EmissionWoodChannelR: 0
+    - _EmissiveFresnelBias: 0.422
+    - _EmissiveFresnelPower: 0.2
+    - _EmissiveFresnelScale: 0.14
+    - _EmissiveGlowStrength: 2.5
+    - _EmissiveHologramFrequency: 0
+    - _EmissiveHologramSpeed: 0
+    - _EmissiveHolographicBias: 0
+    - _EmissiveHolographicPower: 0
+    - _EmissiveHolographicScale: 0
+    - _EmissiveHolographicSwitch: 0
+    - _EmissivePulsationSwitch: 0
+    - _EmissivePulseSpeed: 2
+    - _EnvironmentalShadowIntensity: 0.53
+    - _HologramDirection: 0
+    - _OutlineThickness: 0.01
+    - _ShadowLength0: 0.472
+    - _ShadowLength1: 0.312
+    - _ShadowLength2: 0.254
+    - _ShadowLength3: 0.067
+    - __dirty: 0
+    m_Colors:
+    - _ClothChannelB: {r: 0.4150943, g: 0.3892488, b: 0.4141213, a: 1}
+    - _ClothChannelG: {r: 1, g: 1, b: 1, a: 1}
+    - _ClothChannelR: {r: 0.2812211, g: 0.3197634, b: 0.3490566, a: 1}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
+    - _EyeChannelB: {r: 1, g: 1, b: 1, a: 1}
+    - _EyeChannelG: {r: 1, g: 0, b: 0, a: 1}
+    - _EyeChannelR: {r: 1, g: 1, b: 1, a: 1}
+    - _FleshChannelB: {r: 0.6132076, g: 0.5283837, b: 0, a: 1}
+    - _FleshChannelG: {r: 0, g: 1, b: 0.9489832, a: 1}
+    - _FleshChannelR: {r: 0.2358491, g: 0.2358491, b: 0.2358491, a: 1}
+    - _MetalChannelB: {r: 0.019607844, g: 0, b: 0.6509804, a: 1}
+    - _MetalChannelG: {r: 0.021125065, g: 0, b: 0.6509804, a: 1}
+    - _MetalChannelR: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
+    - _ShadowTint: {r: 1, g: 1, b: 1, a: 0}
+    - _WoodChannelB: {r: 0.671401, g: 0, b: 1, a: 1}
+    - _WoodChannelG: {r: 0.4716981, g: 0.46502313, b: 0.46502313, a: 1}
+    - _WoodChannelR: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
+  m_BuildTextureStacks: []

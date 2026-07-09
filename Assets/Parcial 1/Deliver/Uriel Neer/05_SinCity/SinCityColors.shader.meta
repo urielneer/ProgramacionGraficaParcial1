@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: cb7351f46caf7ce45b3dca20f4bbc29a
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _GrayTexture: {fileID: 2800000, guid: c376a2d96fb3e4241a9e94e21bbd377e, type: 3}
+  - _FleshMasks: {fileID: 2800000, guid: c376a2d96fb3e4241a9e94e21bbd377e, type: 3}
+  - _EyesMasks: {fileID: 2800000, guid: c376a2d96fb3e4241a9e94e21bbd377e, type: 3}
+  - _MetalMasks: {fileID: 2800000, guid: c376a2d96fb3e4241a9e94e21bbd377e, type: 3}
+  - _WoodMasks: {fileID: 2800000, guid: c376a2d96fb3e4241a9e94e21bbd377e, type: 3}
+  - _ClothMasks: {fileID: 2800000, guid: c376a2d96fb3e4241a9e94e21bbd377e, type: 3}
+  - _Normal: {fileID: 2800000, guid: f6c18262b3c0eba4bb830f3d91682a4f, type: 3}
+  - _PencilMask: {fileID: 2800000, guid: 63af688346670ce469b96e962b8f48c9, type: 3}
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

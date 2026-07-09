@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mateo_Chavit_Water
+  m_Shader: {fileID: 4800000, guid: 17ccd4f0a2117134e866f4c899c1793d, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Bias: 0
+    - _ColorScale: 70
+    - _ColorSpeed: 0
+    - _DepthBias: 0
+    - _DepthColorDist: 0.59
+    - _DepthColorPow: 0.91
+    - _DepthColorScale: 0.15
+    - _DepthDistance: 0.03
+    - _DepthPower: 1
+    - _DepthScale: 0.02
+    - _Divide: 3.7
+    - _DpethColorBias: 0.02
+    - _Edge: 0.31
+    - _Float0: 0
+    - _Float1: 0
+    - _Float2: 0
+    - _Float3: 0
+    - _FoamScale: 37.61
+    - _FoamSpeed: 1.22
+    - _Max: 1
+    - _Min: 0.1
+    - _OffsetScale: 10
+    - _OffsetSpeed: 0.04
+    - _Pow: 1.11
+    - _Scale: 5.36
+    - _VoronoiScale: 30
+    - _VoronoiSpeed: 1.5
+    - _WaveScale: 12.7
+    - __dirty: 0
+    m_Colors:
+    - _Color0: {r: 0.5330188, g: 0.84800875, b: 1, a: 0}
+    - _Color1: {r: 0, g: 0.56779563, b: 0.8018868, a: 0}
+    - _Color2: {r: 1, g: 1, b: 1, a: 0}
+    - _Color3: {r: 0, g: 0.97770834, b: 1, a: 0}
+    - _DepthColor: {r: 0.07845318, g: 0.10362299, b: 0.4056604, a: 0}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 0}
+    - _Offset: {r: 1, g: 0.5, b: 0, a: 0}
+    - _Vector0: {r: 0, g: 3, b: 0, a: 0}
+    - _WaterColor1: {r: 0.009878943, g: 0.269758, b: 0.6981132, a: 0}
+    - _WaterColor2: {r: 0.09549664, g: 0.5829179, b: 0.6981132, a: 0}
+    - _WaterColor3: {r: 1, g: 1, b: 1, a: 0}
+  m_BuildTextureStacks: []

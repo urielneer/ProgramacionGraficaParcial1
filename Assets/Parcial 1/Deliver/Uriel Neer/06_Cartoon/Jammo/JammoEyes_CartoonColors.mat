@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: JammoEyes_CartoonColors
+  m_Shader: {fileID: 4800000, guid: ad743f236af5b5342b1de4c6b3cdb666, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlbedoTexture:
+        m_Texture: {fileID: 2800000, guid: 1dafe5eb7aace0545b0b5bd0dd59c5e4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BlueMaskPattern:
+        m_Texture: {fileID: 2800000, guid: 38b6afe7c156f934aa7b8675ea0037ef, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BlueMaskPatternx:
+        m_Texture: {fileID: 2800000, guid: 78d8be59e85608847a14772bfcb94a07, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: 066f29fd0fc3d0341b96857dcf2cede3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PlaidMasks:
+        m_Texture: {fileID: 2800000, guid: e17d217475179704e93712db9fff6c6f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PlaidedPattern1:
+        m_Texture: {fileID: 2800000, guid: 78d8be59e85608847a14772bfcb94a07, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RedMaskPattern:
+        m_Texture: {fileID: 2800000, guid: 38b6afe7c156f934aa7b8675ea0037ef, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture0:
+        m_Texture: {fileID: 2800000, guid: c9fd4ccfc3404b04eae3cd87e40a8e2e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _mixbot_lOpacityMasks:
+        m_Texture: {fileID: 2800000, guid: f78e0e43a3e638e4b9f76673ac17fb1a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _mixbot_lOpacityMasks1:
+        m_Texture: {fileID: 2800000, guid: b26b9a27106a39844a6d7f6d2741013a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ASEOutlineWidth: 0
+    - _Cutoff: 0.5
+    - _EmissiveFresnelBias: 0.038
+    - _EmissiveFresnelPower: 2
+    - _EmissiveFresnelScale: 0.485
+    - _EmissiveGlowStrength: 10
+    - _EmissiveHologramFrequency: 3
+    - _EmissiveHologramSpeed: 0.5
+    - _EmissiveHolographicBias: 0.103
+    - _EmissiveHolographicPower: 23
+    - _EmissiveHolographicScale: 0.325
+    - _EmissiveHolographicSwitch: 1
+    - _EmissivePulsationSwitch: 1
+    - _EmissivePulseSpeed: 3
+    - _EnvironmentalShadowIntensity: 0.916
+    - _HologramDirection: 0
+    - _OutlineThickness: 0
+    - _OutlineWidth1: 0.02
+    - _ShadowAlpha0: 0.77
+    - _ShadowIntensity: 0.847
+    - _ShadowLength0: 0.011
+    - _ShadowLength1: 0.153
+    - _ShadowLength2: 0.366
+    - __dirty: 0
+    m_Colors:
+    - _EmissiveColor: {r: 0.78431374, g: 0, b: 1, a: 0}
+    - _EmissiveNeonColor: {r: 0.43862855, g: 1, b: 0, a: 1}
+    - _LightTint: {r: 1, g: 1, b: 1, a: 0}
+    - _OutlineTint1: {r: 0.5294118, g: 0.5294118, b: 0.5294118, a: 0}
+    - _ShadowHigh: {r: 1, g: 0, b: 1, a: 1}
+    - _ShadowLow: {r: 0, g: 1, b: 0, a: 1}
+    - _ShadowTint: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowTint1: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
