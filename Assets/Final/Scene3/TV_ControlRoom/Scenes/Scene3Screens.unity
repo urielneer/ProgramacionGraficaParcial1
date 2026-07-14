@@ -2245,6 +2245,7 @@ Transform:
   - {fileID: 688871359}
   - {fileID: 575704653}
   - {fileID: 1151509178}
+  - {fileID: 1708506287}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2409,7 +2410,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 1
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -2437,7 +2438,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475165565}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.01, z: -0.08}
+  m_LocalPosition: {x: 0, y: 2.01, z: 0.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2660,6 +2661,62 @@ MonoBehaviour:
   - {fileID: 2100000, guid: f964e75cda423f34a95e6562f127a966, type: 2}
   - {fileID: 2100000, guid: 27d579067bd349744a57f5759a82f01c, type: 2}
   - {fileID: 2100000, guid: ef7a96e1db0ff4d4e8c5ba3d19954852, type: 2}
+--- !u!1 &1708506286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1708506287}
+  - component: {fileID: 1708506288}
+  m_Layer: 0
+  m_Name: RainGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1708506287
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708506286}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1420904996}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1708506288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708506286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b655e6f82855ae04ebd9d21425bfa5cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rainMesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  rainMaterial: {fileID: 2100000, guid: 3c2de2534e76db8469b0020c72ebf3ca, type: 2}
+  targetCamera: {fileID: 688871361}
+  followTarget: {fileID: 688871359}
+  areaCenter: {x: 0.71, y: -27.6, z: 15.13}
+  areaSize: {x: 165.3, y: 133.3, z: 190.1}
+  groundY: -3
+  dropCount: 500
+  fallSpeedRange: {x: 100, y: 200}
+  lengthRange: {x: 7.2, y: 2.89}
+  width: 1
+  wind: {x: 4.05, y: 3.21}
 --- !u!1 &1746327521
 GameObject:
   m_ObjectHideFlags: 0
