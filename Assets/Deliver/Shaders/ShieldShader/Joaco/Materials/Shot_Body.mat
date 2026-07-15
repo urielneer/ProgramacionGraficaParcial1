@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Unlit_EnergyProjectlie
+  m_Name: Shot_Body
   m_Shader: {fileID: 4800000, guid: bd957e88beaf0c64799aa3acad1cb32e, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -30,9 +30,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _BodyAlpha: 0.75
     - _FlowSpeed: -0.9
     - _NoiseTiling: 2
     - _Power: 1
     - __dirty: 0
-    m_Colors: []
+    m_Colors:
+    - _Color0: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 0.6603774, g: 0.080605276, b: 0.06541474, a: 1}
   m_BuildTextureStacks: []

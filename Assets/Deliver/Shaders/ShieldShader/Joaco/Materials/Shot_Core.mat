@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WeaponCharge
+  m_Name: Shot_Core
   m_Shader: {fileID: 4800000, guid: 65c32673d2b4fc845b1d768f37bf7e6b, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -22,12 +22,12 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _ChargeAmount: 0.52
-    - _FresnelPower: 2.75
+    - _ChargeAmount: 0.974
+    - _FresnelPower: 3
     - _PulseFactor: 1
     - _PulseSpeed: 6
     - __dirty: 0
     m_Colors:
-    - _Color0: {r: 0.7830189, g: 0.06314915, b: 0, a: 1}
-    - _Color1: {r: 0.8509804, g: 0.16470587, b: 0.20378502, a: 1}
+    - _Color0: {r: 1, g: 0, b: 0.09163618, a: 1}
+    - _Color1: {r: 0.9150943, g: 0.41006586, b: 0.43136773, a: 1}
   m_BuildTextureStacks: []
