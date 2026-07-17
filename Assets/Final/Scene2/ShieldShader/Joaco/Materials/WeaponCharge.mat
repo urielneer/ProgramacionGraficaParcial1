@@ -26,7 +26,7 @@ Material:
     - _FresnelPower: 3
     - _PulseFactor: 1
     - _PulseSpeed: 6
-    - __dirty: 1
+    - __dirty: 0
     m_Colors:
     - _Color0: {r: 0.07849769, g: 0.1403999, b: 0.7924528, a: 1}
     - _Color1: {r: 0.1642043, g: 0.8490566, b: 0.8155485, a: 1}

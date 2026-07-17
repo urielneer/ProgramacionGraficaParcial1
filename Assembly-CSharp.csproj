@@ -77,6 +77,7 @@
     <Compile Include="Assets\Parcial 1\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
     <Compile Include="Assets\Parcial 1\Phoenix3D\Demo\Scripts\MaterialSwithcer.cs" />
     <Compile Include="Assets\Parcial 1\Scripts\TimedTeleporter.cs" />
+    <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\SideCameraController.cs" />
     <Compile Include="Assets\Parcial 2\NahuelMarcoSerial\7.Stencil\SeguimientoCamara.cs" />
     <Compile Include="Assets\Parcial 1\Scripts\CameraLinearLook.cs" />
     <Compile Include="Assets\Parcial 1\Scripts\OrbitCamera.cs" />
@@ -93,8 +94,14 @@
     <Compile Include="Assets\Parcial 2\MauroPari\Stencil_Z-Buffer\Scripts\Player_Movement.cs" />
     <Compile Include="Assets\Parcial 2\MateoChavit\Scripts\ObjectSpawner.cs" />
     <Compile Include="Assets\Parcial 2\Uriel Neer\1_Card\Assets\Synty - Third Party\PolygonGoblinWarCamp\Scripts\SyntyWaterBobGoblin.cs" />
+    <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\Shooter.cs" />
+    <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\WeaponEnergy.cs" />
+    <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\EnergyProjectile.cs" />
+    <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\WeaponChargeUI.cs" />
+    <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\Secuencia_Combate.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Final\Scene2\ShieldShader\Mauro\Shaders\BaseColor2.shader" />
     <None Include="Assets\Parcial 2\MauroPari\Projector_Window\Shaders\WindowProjector.shader" />
     <None Include="Assets\Parcial 1\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Parcial 1\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -113,6 +120,8 @@
     <None Include="Assets\Parcial 1\Deliver\Mateo_Chavit\Shaders\IslandScene\Mateo_Chavit_Island.shader" />
     <None Include="Assets\Parcial 1\Deliver\Florian_Mathe_Jump\Jump_Shader\Florian_Mathe_Jump.shader" />
     <None Include="Assets\Parcial 2\Uriel Neer\2_Postprocesses\Shaders\PostProcessCamera.shader" />
+    <None Include="Assets\Same Gev Dudios\Sci-Fi Robots Bundle\ReadMe.txt" />
+    <None Include="Assets\Final\Scene2\ShieldShader\Mauro\Shaders\ShieldImpact.shader" />
     <None Include="Assets\Parcial 1\Deliver\Ivanko_Joaquin\RobotScene\Joaquin_Ivanko_Robot_Body.shader" />
     <None Include="Assets\Final\Scene2\ShieldShader\Joaco\Shaders\WeaponCharge.shader" />
     <None Include="Assets\Parcial 1\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />

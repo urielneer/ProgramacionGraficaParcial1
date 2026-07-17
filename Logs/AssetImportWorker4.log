@@ -1,0 +1,461 @@
+Using pre-set license
+Built from '2021.3/evg/staging/82bb020e-b03b1330/draft-0' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'es' Physical Memory: 31896 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2021.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/Joaquin/Documents/GitHub/ProgramacionGraficaParcial1
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+49848
+Successfully changed project path to: C:/Users/Joaquin/Documents/GitHub/ProgramacionGraficaParcial1
+C:/Users/Joaquin/Documents/GitHub/ProgramacionGraficaParcial1
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [76060] Host "[IP] 192.168.100.116 [Port] 0 [Flags] 2 [Guid] 1772265067 [EditorId] 1772265067 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EG8I8JT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [76060] Host "[IP] 192.168.100.116 [Port] 0 [Flags] 2 [Guid] 1772265067 [EditorId] 1772265067 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EG8I8JT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 58.17 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Joaquin/Documents/GitHub/ProgramacionGraficaParcial1/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 5060 Ti (ID=0x2d04)
+    Vendor:   NVIDIA
+    VRAM:     16050 MB
+    Driver:   32.0.16.1047
+Shader 'ASESampleShaders/Terrain/TerrainSnowCoverageFirstPass': dependency 'BaseMapShader' shader 'ASESampleShaders/TerrainBase' not found
+Shader 'ASESampleShaders/Terrain/TerrainSnowCoverageFirstPass': dependency 'BaseMapShader' shader 'ASESampleShaders/TerrainBase' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56696
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002981 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 48.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.312 seconds
+Domain Reload Profiling:
+	ReloadAssembly (312ms)
+		BeginReloadAssembly (40ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (217ms)
+			LoadAssemblies (38ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (48ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (12ms)
+			SetupLoadedEditorAssemblies (130ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (49ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (56ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000553 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 57.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.569 seconds
+Domain Reload Profiling:
+	ReloadAssembly (570ms)
+		BeginReloadAssembly (60ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (451ms)
+			LoadAssemblies (39ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (76ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (284ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (58ms)
+				BeforeProcessingInitializeOnLoad (36ms)
+				ProcessInitializeOnLoadAttributes (139ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'ASESampleShaders/Terrain/TerrainSnowCoverageFirstPass': dependency 'BaseMapShader' shader 'ASESampleShaders/TerrainBase' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3293 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (1.0 MB). Loaded Objects now: 3770.
+Memory consumption went from 246.1 MB to 245.1 MB.
+Total: 2.676100 ms (FindLiveObjects: 0.211300 ms CreateObjectMapping: 0.033600 ms MarkObjects: 2.111300 ms  DeleteObjects: 0.318800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 175607.978707 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Textures
+  artifactKey: Guid(00c7ff57414b88646b8cc0ae14169380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Textures using Guid(00c7ff57414b88646b8cc0ae14169380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '063500b3ed444c96fa2c41b8cd357344') in 0.012889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.045441 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Textures/shield_impact_radial_alpha_1024.png
+  artifactKey: Guid(bca325f6c9b81454c848b996b4300f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Textures/shield_impact_radial_alpha_1024.png using Guid(bca325f6c9b81454c848b996b4300f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae6d38403f1a2b46babb275b8aa347b0') in 0.078922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.779415 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab
+  artifactKey: Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab using Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50114dddd10659e2a2a5b77e343166ae') in 0.012811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.196988 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab
+  artifactKey: Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab using Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9021ecabafa3d42b877fb7a8b88cf3ff') in 0.004389 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.629808 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Shaders/WeaponCharge.shader
+  artifactKey: Guid(65c32673d2b4fc845b1d768f37bf7e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Shaders/WeaponCharge.shader using Guid(65c32673d2b4fc845b1d768f37bf7e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03a9b0bc59ceadb7b8e54d7e28f1665') in 0.003905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.505889 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Shaders/EnergyProjectlie.shader
+  artifactKey: Guid(bd957e88beaf0c64799aa3acad1cb32e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Shaders/EnergyProjectlie.shader using Guid(bd957e88beaf0c64799aa3acad1cb32e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e403439c1c8675fc3d812321622053') in 0.006145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.256466 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Shaders/New Material.mat
+  artifactKey: Guid(f261acd70733e57448f6fc98b49cf2ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Shaders/New Material.mat using Guid(f261acd70733e57448f6fc98b49cf2ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b015bdda87e16c1288b4963d38a4cd23') in 0.060955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 90.402471 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab
+  artifactKey: Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab using Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8818f3f867c76546c9ad5acef1f55202') in 0.003362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.502242 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab
+  artifactKey: Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab using Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff6604d90c32d8943b31a5bd36549410') in 0.003153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.435995 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab
+  artifactKey: Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab using Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcdccfb2e5f5feb922038b60be3f4862') in 0.004297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.863294 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab
+  artifactKey: Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab using Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7a0a8751345b1a72d1e6ca9d914effe') in 0.002883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.125958 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab
+  artifactKey: Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab using Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95fe17542ccaa22f47469f30fc31c59c') in 0.003128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.621165 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab
+  artifactKey: Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab using Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74de45ce74df3202ba6ec14465b77ab4') in 0.003432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.647411 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab
+  artifactKey: Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab using Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f204a5bd10ea04ab98b287d70ce4162') in 0.003476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.314759 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab
+  artifactKey: Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab using Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '936099b194e747ee97ddf2a130da43bf') in 0.003805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.612644 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab
+  artifactKey: Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab using Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea75b11186f7ffbaebe4e47af7f4f725') in 0.004271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.578175 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab
+  artifactKey: Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Materials/Proyectil.prefab using Guid(1630961a66a44234a93d177170f2aecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '572af0d72f22ce0d3b40042bd1e2a432') in 0.004436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.147642 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Materials/Unlit_EnergyProjectlie.mat
+  artifactKey: Guid(34e80703ccff40443b9b199c4a21ad7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Materials/Unlit_EnergyProjectlie.mat using Guid(34e80703ccff40443b9b199c4a21ad7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fead122e1f25900d1e2280c4139bcac') in 0.013190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 56.260867 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Scripts/Secuencia_Combate.cs
+  artifactKey: Guid(3487cc1bed7b6a246b2731c9bcd912b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Scripts/Secuencia_Combate.cs using Guid(3487cc1bed7b6a246b2731c9bcd912b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '126e8f2db755f04d673f3b4c82f92442') in 0.008782 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000788 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.936 seconds
+Domain Reload Profiling:
+	ReloadAssembly (937ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (750ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (145ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (450ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (36ms)
+				ProcessInitializeOnLoadAttributes (342ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Shader 'ASESampleShaders/Terrain/TerrainSnowCoverageFirstPass': dependency 'BaseMapShader' shader 'ASESampleShaders/TerrainBase' not found
+Refreshing native plugins compatible for Editor in 1.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2915 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (0.9 MB). Loaded Objects now: 3828.
+Memory consumption went from 216.2 MB to 215.3 MB.
+Total: 2.251300 ms (FindLiveObjects: 0.210800 ms CreateObjectMapping: 0.031800 ms MarkObjects: 1.807800 ms  DeleteObjects: 0.200000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 20.356792 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Scripts/Secuencia_Combate.cs
+  artifactKey: Guid(3487cc1bed7b6a246b2731c9bcd912b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Scripts/Secuencia_Combate.cs using Guid(3487cc1bed7b6a246b2731c9bcd912b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b69ce258df299929077d44032f06d71') in 0.005857 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000615 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.678 seconds
+Domain Reload Profiling:
+	ReloadAssembly (679ms)
+		BeginReloadAssembly (96ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (505ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (118ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (260ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (43ms)
+				ProcessInitializeOnLoadAttributes (151ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'ASESampleShaders/Terrain/TerrainSnowCoverageFirstPass': dependency 'BaseMapShader' shader 'ASESampleShaders/TerrainBase' not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2915 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (0.9 MB). Loaded Objects now: 3843.
+Memory consumption went from 216.2 MB to 215.3 MB.
+Total: 2.232500 ms (FindLiveObjects: 0.225900 ms CreateObjectMapping: 0.033400 ms MarkObjects: 1.761200 ms  DeleteObjects: 0.211200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 119.312668 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Scripts/WeaponEnergy.cs
+  artifactKey: Guid(0a76935be0a95404c9c5d76b16eae6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Scripts/WeaponEnergy.cs using Guid(0a76935be0a95404c9c5d76b16eae6f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0116db0b78ce9dc7dd9f06321af1509') in 0.012514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.026233 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Scripts/WeaponChargeUI.cs
+  artifactKey: Guid(c80bf275f15d4c541a96ea9b0d9ee081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Scripts/WeaponChargeUI.cs using Guid(c80bf275f15d4c541a96ea9b0d9ee081) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01ece32994a540540421449ce5bf8248') in 0.006437 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000559 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.688 seconds
+Domain Reload Profiling:
+	ReloadAssembly (689ms)
+		BeginReloadAssembly (89ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (529ms)
+			LoadAssemblies (53ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (115ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (289ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (40ms)
+				ProcessInitializeOnLoadAttributes (180ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'ASESampleShaders/Terrain/TerrainSnowCoverageFirstPass': dependency 'BaseMapShader' shader 'ASESampleShaders/TerrainBase' not found
+Refreshing native plugins compatible for Editor in 1.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2915 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (0.9 MB). Loaded Objects now: 3858.
+Memory consumption went from 216.2 MB to 215.3 MB.
+Total: 3.321400 ms (FindLiveObjects: 0.305300 ms CreateObjectMapping: 0.056300 ms MarkObjects: 2.613000 ms  DeleteObjects: 0.345900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

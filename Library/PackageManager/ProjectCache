@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639189636340000000
+      ticks: 639191623740000000
     m_Hash: 2979177350
   m_LockFileStatus:
     m_FilePath: C:/Users/Joaquin/Documents/GitHub/ProgramacionGraficaParcial1/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639189636340000000
+      ticks: 639191623740000000
     m_Hash: 1904703099
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}

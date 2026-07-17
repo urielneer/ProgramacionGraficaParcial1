@@ -15,7 +15,7 @@ C:/Users/Joaquin/Documents/GitHub/ProgramacionGraficaParcial1
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63066
+49848
 Successfully changed project path to: C:/Users/Joaquin/Documents/GitHub/ProgramacionGraficaParcial1
 C:/Users/Joaquin/Documents/GitHub/ProgramacionGraficaParcial1
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/Joaquin/Documents/GitHub/ProgramacionGraficaParcial1
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [17372] Host "[IP] 192.168.1.43 [Port] 0 [Flags] 2 [Guid] 2704679585 [EditorId] 2704679585 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EG8I8JT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [77320] Host "[IP] 192.168.100.116 [Port] 0 [Flags] 2 [Guid] 171801239 [EditorId] 171801239 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EG8I8JT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [17372] Host "[IP] 192.168.1.43 [Port] 0 [Flags] 2 [Guid] 2704679585 [EditorId] 2704679585 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EG8I8JT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [77320] Host "[IP] 192.168.100.116 [Port] 0 [Flags] 2 [Guid] 171801239 [EditorId] 171801239 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EG8I8JT) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 44.89 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 46.89 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.3.16f1/Editor/Data/Resources/UnitySubsystems
@@ -69,74 +69,74 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2021.3.16f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56584
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003332 seconds.
+Registered in 0.003030 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 46.08 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 44.86 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.308 seconds
+- Completed reload, in  0.322 seconds
 Domain Reload Profiling:
-	ReloadAssembly (309ms)
-		BeginReloadAssembly (38ms)
+	ReloadAssembly (322ms)
+		BeginReloadAssembly (40ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (213ms)
-			LoadAssemblies (37ms)
+		EndReloadAssembly (222ms)
+			LoadAssemblies (38ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (47ms)
+			SetupTypeCache (58ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (13ms)
+			RebuildScriptCaches (14ms)
 			SetupLoadedEditorAssemblies (124ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (46ms)
+				RefreshPlugins (45ms)
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (54ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000545 seconds.
+Registered in 0.000546 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 48.33 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 53.23 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.509 seconds
+- Completed reload, in  0.579 seconds
 Domain Reload Profiling:
-	ReloadAssembly (509ms)
-		BeginReloadAssembly (58ms)
+	ReloadAssembly (579ms)
+		BeginReloadAssembly (64ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (14ms)
-		EndReloadAssembly (397ms)
-			LoadAssemblies (36ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (452ms)
+			LoadAssemblies (42ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (71ms)
+			SetupTypeCache (78ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (240ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (277ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (48ms)
-				BeforeProcessingInitializeOnLoad (35ms)
-				ProcessInitializeOnLoadAttributes (118ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				RefreshPlugins (53ms)
+				BeforeProcessingInitializeOnLoad (44ms)
+				ProcessInitializeOnLoadAttributes (131ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (3ms)
@@ -144,13 +144,13 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'ASESampleShaders/Terrain/TerrainSnowCoverageFirstPass': dependency 'BaseMapShader' shader 'ASESampleShaders/TerrainBase' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.10 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.17 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3281 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 33 unused Assets / (1.0 MB). Loaded Objects now: 3758.
-Memory consumption went from 243.5 MB to 242.5 MB.
-Total: 2.131400 ms (FindLiveObjects: 0.175400 ms CreateObjectMapping: 0.033900 ms MarkObjects: 1.714700 ms  DeleteObjects: 0.206600 ms)
+Unloading 3289 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 33 unused Assets / (1.0 MB). Loaded Objects now: 3766.
+Memory consumption went from 246.0 MB to 245.0 MB.
+Total: 2.313300 ms (FindLiveObjects: 0.208700 ms CreateObjectMapping: 0.037500 ms MarkObjects: 1.784600 ms  DeleteObjects: 0.281400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -164,49 +164,333 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 950311.809046 seconds.
-  path: Assets/Deliver
-  artifactKey: Guid(29a9e17ff01aac4448592618c73effed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Deliver using Guid(29a9e17ff01aac4448592618c73effed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fbc4739321ecd1545aa37888a17e9ca') in 0.011309 seconds 
+  Time since last request: 174863.494086 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Joaco/Gun_Animation.controller
+  artifactKey: Guid(ee706be2e03335f41a7e90421d3b2106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Joaco/Gun_Animation.controller using Guid(ee706be2e03335f41a7e90421d3b2106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '897c7659a9948f09fdb4b358c3826d91') in 0.028972 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.982185 seconds.
-  path: Assets/Deliver/Shaders
-  artifactKey: Guid(99e513970529cc7428002bf4fb40a054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Deliver/Shaders using Guid(99e513970529cc7428002bf4fb40a054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '948b8ec29ea9cbe7e65ad24c0d698e4e') in 0.006070 seconds 
+  Time since last request: 25.480431 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Scripts
+  artifactKey: Guid(1102be33335a50447ab8754158731ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Scripts using Guid(1102be33335a50447ab8754158731ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a58792468ff84ecd1f5f99c4c414880') in 0.006943 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.001106 seconds.
-  path: Assets/Deliver/Shaders/ShieldShader
-  artifactKey: Guid(30f06803d37025d4a9b96cdb6c23e508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Deliver/Shaders/ShieldShader using Guid(30f06803d37025d4a9b96cdb6c23e508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ef4eee5e1c755da385ebecaf2ed2e3b') in 0.005942 seconds 
+  Time since last request: 55.085780 seconds.
+  path: Assets/Final/Scene2/ShieldShader/Scripts/Shooter.cs
+  artifactKey: Guid(d4e4d6b4e94a4654fa7d1117b41218b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/Scene2/ShieldShader/Scripts/Shooter.cs using Guid(d4e4d6b4e94a4654fa7d1117b41218b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '595d3321f201cbe8ac391491ad2fd0b1') in 0.005296 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000802 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.078 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1079ms)
+		BeginReloadAssembly (152ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (822ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (140ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (522ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (384ms)
+				ProcessInitializeOnLoadMethodAttributes (74ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'ASESampleShaders/Terrain/TerrainSnowCoverageFirstPass': dependency 'BaseMapShader' shader 'ASESampleShaders/TerrainBase' not found
+Refreshing native plugins compatible for Editor in 1.96 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2911 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (0.9 MB). Loaded Objects now: 3783.
+Memory consumption went from 211.5 MB to 210.6 MB.
+Total: 2.274400 ms (FindLiveObjects: 0.209500 ms CreateObjectMapping: 0.030100 ms MarkObjects: 1.816500 ms  DeleteObjects: 0.217300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000522 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.552 seconds
+Domain Reload Profiling:
+	ReloadAssembly (552ms)
+		BeginReloadAssembly (76ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (421ms)
+			LoadAssemblies (40ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (93ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (220ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (35ms)
+				ProcessInitializeOnLoadAttributes (134ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Shader 'ASESampleShaders/Terrain/TerrainSnowCoverageFirstPass': dependency 'BaseMapShader' shader 'ASESampleShaders/TerrainBase' not found
+Refreshing native plugins compatible for Editor in 1.28 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2911 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (0.9 MB). Loaded Objects now: 3798.
+Memory consumption went from 211.5 MB to 210.6 MB.
+Total: 2.078200 ms (FindLiveObjects: 0.189300 ms CreateObjectMapping: 0.030700 ms MarkObjects: 1.665500 ms  DeleteObjects: 0.191900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000635 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.581 seconds
+Domain Reload Profiling:
+	ReloadAssembly (581ms)
+		BeginReloadAssembly (70ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (445ms)
+			LoadAssemblies (41ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (95ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (239ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (35ms)
+				ProcessInitializeOnLoadAttributes (146ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'ASESampleShaders/Terrain/TerrainSnowCoverageFirstPass': dependency 'BaseMapShader' shader 'ASESampleShaders/TerrainBase' not found
+Refreshing native plugins compatible for Editor in 1.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2911 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (0.9 MB). Loaded Objects now: 3813.
+Memory consumption went from 211.5 MB to 210.6 MB.
+Total: 2.402100 ms (FindLiveObjects: 0.171700 ms CreateObjectMapping: 0.057900 ms MarkObjects: 1.965100 ms  DeleteObjects: 0.206600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000514 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.561 seconds
+Domain Reload Profiling:
+	ReloadAssembly (561ms)
+		BeginReloadAssembly (74ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (439ms)
+			LoadAssemblies (42ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (99ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (232ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (34ms)
+				ProcessInitializeOnLoadAttributes (140ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'ASESampleShaders/Terrain/TerrainSnowCoverageFirstPass': dependency 'BaseMapShader' shader 'ASESampleShaders/TerrainBase' not found
+Refreshing native plugins compatible for Editor in 1.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2911 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 12 unused Assets / (0.9 MB). Loaded Objects now: 3828.
+Memory consumption went from 211.6 MB to 210.6 MB.
+Total: 2.206400 ms (FindLiveObjects: 0.178900 ms CreateObjectMapping: 0.030100 ms MarkObjects: 1.746400 ms  DeleteObjects: 0.250500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.764022 seconds.
-  path: Assets/Deliver/Shaders/ShieldShader/Joaco
-  artifactKey: Guid(78d8d895a8c7b9547adeaa2566e907df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Deliver/Shaders/ShieldShader/Joaco using Guid(78d8d895a8c7b9547adeaa2566e907df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8727e1452cd5431516e72dfc67ee1ce1') in 0.005879 seconds 
+  Time since last request: 279.128758 seconds.
+  path: Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_BckStrafe_B_Neut.fbx
+  artifactKey: Guid(3d740e383f2df934295144310e7dd679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_BckStrafe_B_Neut.fbx using Guid(3d740e383f2df934295144310e7dd679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd1c9765dc8e6f1ef1ec875df1ef7cdd') in 0.057577 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.984772 seconds.
-  path: Assets/Final
-  artifactKey: Guid(c884e4ce310a1f14daed6ef26b7780de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final using Guid(c884e4ce310a1f14daed6ef26b7780de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf4c6b49a2cb71f4c9013ffc813abd86') in 0.005955 seconds 
+  Time since last request: 0.000018 seconds.
+  path: Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_FwdStrafe_FL_RM_Neut.fbx
+  artifactKey: Guid(4d7d915d8add3454ea75e6c789c454c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_FwdStrafe_FL_RM_Neut.fbx using Guid(4d7d915d8add3454ea75e6c789c454c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c1021ea0ce5bf8dd122d9938c6b11d6') in 0.011112 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.959553 seconds.
-  path: Assets/Final/Scene2
-  artifactKey: Guid(57d4f7a277834a54b8f71c904dcb52f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final/Scene2 using Guid(57d4f7a277834a54b8f71c904dcb52f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f10d5a4e9aee2181185b469e1aa1c212') in 0.005875 seconds 
+  Time since last request: 0.000013 seconds.
+  path: Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_BckStrafe_R_RM_Neut.fbx
+  artifactKey: Guid(b41db1e29bef14c47ba47ced8c532f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_BckStrafe_R_RM_Neut.fbx using Guid(b41db1e29bef14c47ba47ced8c532f5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b92deb04c08786c054ac46b15ac5c49') in 0.010479 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 40.278714 seconds.
-  path: Assets/Final/Scene2/ShieldShader/Shield.unity
-  artifactKey: Guid(efe02dd2ea3699c40a56495d8ee572e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final/Scene2/ShieldShader/Shield.unity using Guid(efe02dd2ea3699c40a56495d8ee572e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '873081ad5d334cad9d6c61e1d7ecbeb8') in 0.006456 seconds 
+  Time since last request: 0.000009 seconds.
+  path: Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_BckStrafe_FL_Neut.fbx
+  artifactKey: Guid(685e11bd1d2fb6b459a2896ea4ffb99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_BckStrafe_FL_Neut.fbx using Guid(685e11bd1d2fb6b459a2896ea4ffb99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35461c180df73e85962034ee8c895acf') in 0.009993 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.330529 seconds.
-  path: Assets/Final/Scene2/ShieldShader/Mauro
-  artifactKey: Guid(55b6b5051cb62cd45b9371e9490be7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Final/Scene2/ShieldShader/Mauro using Guid(55b6b5051cb62cd45b9371e9490be7fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53bcd69661772b0fe724b911643520a9') in 0.005621 seconds 
+  Time since last request: 0.000014 seconds.
+  path: Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_BckStrafe_L_RM_Neut.fbx
+  artifactKey: Guid(ceaea79d3129e9244af3bf87b22f75e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_BckStrafe_L_RM_Neut.fbx using Guid(ceaea79d3129e9244af3bf87b22f75e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6504323a1d9d81cfe4305313400e121') in 0.010942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Run/A_MOD_GBL_Run_BckStrafe_BL_Neut.fbx
+  artifactKey: Guid(ac9dd2e40f17d1241adc3e10ee7e499f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Run/A_MOD_GBL_Run_BckStrafe_BL_Neut.fbx using Guid(ac9dd2e40f17d1241adc3e10ee7e499f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf48b7557c6f53349a99d0b0e3c2f28a') in 0.010119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Run/A_MOD_GBL_Run_BckStrafe_B_Neut.fbx
+  artifactKey: Guid(32016162d7d0dd3499ff187a4a81603e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Run/A_MOD_GBL_Run_BckStrafe_B_Neut.fbx using Guid(32016162d7d0dd3499ff187a4a81603e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '049575924af77f6904d1d8ec70417ddc') in 0.009694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Run/A_MOD_GBL_Run_BckStrafe_BL_RM_Neut.fbx
+  artifactKey: Guid(e6e4516fe9446314bb9d51ee9f3830b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Run/A_MOD_GBL_Run_BckStrafe_BL_RM_Neut.fbx using Guid(e6e4516fe9446314bb9d51ee9f3830b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34df820f5501694b9454f0e3626f881e') in 0.010093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Run/A_MOD_GBL_Run_BckStrafe_BR_RM_Neut.fbx
+  artifactKey: Guid(e9bea48c90524124cb24a7b626148550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Run/A_MOD_GBL_Run_BckStrafe_BR_RM_Neut.fbx using Guid(e9bea48c90524124cb24a7b626148550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a56fc0c565d1ab96a06f9d60b08b8c6') in 0.009194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_FwdStrafe_FL_Neut.fbx
+  artifactKey: Guid(8c171b16a6579d444832d7b7149c9cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_FwdStrafe_FL_Neut.fbx using Guid(8c171b16a6579d444832d7b7149c9cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '494c7a4df5f46370fa6cb88833fd92cc') in 0.011314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_FwdStrafe_BR_Neut.fbx
+  artifactKey: Guid(682586ca8e614414687a0e83d94bc23a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_FwdStrafe_BR_Neut.fbx using Guid(682586ca8e614414687a0e83d94bc23a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9438c1d37380e9beb3cca838dbc13dc3') in 0.010369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_BckStrafe_L_Neut.fbx
+  artifactKey: Guid(e37bcccff7e81f54996b4a297168436a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_BckStrafe_L_Neut.fbx using Guid(e37bcccff7e81f54996b4a297168436a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db0ced9e74476c77dfae87e613ed7e17') in 0.009742 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_FwdStrafe_F_RM_Neut.fbx
+  artifactKey: Guid(2707bb76098f8d841a882b1c99921b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_FwdStrafe_F_RM_Neut.fbx using Guid(2707bb76098f8d841a882b1c99921b3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3e9d068d6e0442e1d9a160aac797376') in 0.010107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_BckStrafe_R_Neut.fbx
+  artifactKey: Guid(957af315330dcd944a07b61919502e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_BckStrafe_R_Neut.fbx using Guid(957af315330dcd944a07b61919502e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e747f89fc54017cbd15062efea8943') in 0.009819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_FwdStrafe_F_Neut.fbx
+  artifactKey: Guid(c822060bc21989a4cae2e50979fd88ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/AnimationGoblinLocomotion/Animations/Sidekick/Neutral/Locomotion/Crouch/A_MOD_GBL_Crouch_FwdStrafe_F_Neut.fbx using Guid(c822060bc21989a4cae2e50979fd88ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48f34b5dadb02e4b65525b860b2af664') in 0.011525 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
