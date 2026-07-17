@@ -63,10 +63,12 @@
     <Compile Include="Assets\Parcial 1\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
     <Compile Include="Assets\Parcial 1\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\Parcial 2\Uriel Neer\1_Card\Assets\Synty - Third Party\PolygonGoblinWarCamp\Scripts\SimpleRotateGoblin.cs" />
+    <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\EnergyProjectile.cs" />
     <Compile Include="Assets\Parcial 2\NahuelMarcoSerial\7.Stencil\PatrullaEnemigo.cs" />
     <Compile Include="Assets\Parcial 2\MateoChavit\Scripts\BinocularsUI.cs" />
     <Compile Include="Assets\Parcial 1\Scripts\Singleton.cs" />
     <Compile Include="Assets\Parcial 2\JoaquinIvanko\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\TestDisparo.cs" />
     <Compile Include="Assets\Parcial 2\NahuelMarcoSerial\7.Stencil\MovimientoPlayer.cs" />
     <Compile Include="Assets\Parcial 2\Uriel Neer\RotatiionController.cs" />
     <Compile Include="Assets\Parcial 1\Scripts\SceneController.cs" />
@@ -85,20 +87,21 @@
     <Compile Include="Assets\Parcial 1\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\Parcial 1\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
     <Compile Include="Assets\Parcial 2\Uriel Neer\1_Card\Assets\Synty - Third Party\PolygonGeneric\Scripts\Generic_SimpleTranslate.cs" />
+    <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\WeaponEnergy.cs" />
     <Compile Include="Assets\Parcial 1\StarterAssets\FirstPersonController\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\Parcial 2\FlorianMathe\5.2dWater\Scripts\PlayerMovement2D.cs" />
     <Compile Include="Assets\Parcial 2\Uriel Neer\2_Postprocesses\PostProcessManager.cs" />
+    <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\Shooter.cs" />
     <Compile Include="Assets\Parcial 2\MateoChavit\Scripts\TargetDetector.cs" />
     <Compile Include="Assets\Parcial 2\NahuelMarcoSerial\7.Stencil\ModoDetectiveManager.cs" />
     <Compile Include="Assets\Parcial 2\JoaquinIvanko\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Parcial 2\MauroPari\Stencil_Z-Buffer\Scripts\Player_Movement.cs" />
     <Compile Include="Assets\Parcial 2\MateoChavit\Scripts\ObjectSpawner.cs" />
-    <Compile Include="Assets\Parcial 2\Uriel Neer\1_Card\Assets\Synty - Third Party\PolygonGoblinWarCamp\Scripts\SyntyWaterBobGoblin.cs" />
-    <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\Shooter.cs" />
-    <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\WeaponEnergy.cs" />
-    <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\EnergyProjectile.cs" />
     <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\WeaponChargeUI.cs" />
-    <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\Secuencia_Combate.cs" />
+    <Compile Include="Assets\Parcial 2\Uriel Neer\1_Card\Assets\Synty - Third Party\PolygonGoblinWarCamp\Scripts\SyntyWaterBobGoblin.cs" />
+    <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\ShieldEnergy.cs" />
+    <Compile Include="Assets\Final\Scene2\ShieldShader\Scripts\sec.cs" />
+    <Compile Include="Assets\sec.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Final\Scene2\ShieldShader\Mauro\Shaders\BaseColor2.shader" />

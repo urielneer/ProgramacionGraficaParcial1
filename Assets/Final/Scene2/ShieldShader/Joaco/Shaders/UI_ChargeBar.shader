@@ -16,7 +16,7 @@ Shader "Unlit/UI_ChargeBar"
 		_ColorMask ("Color Mask", Float) = 15
 
 		[Toggle(UNITY_UI_ALPHACLIP)] _UseUIAlphaClip ("Use Alpha Clip", Float) = 0
-		_Charge("Charge", Range( 0 , 1)) = 0.5884843
+		_Charge("_Charge", Range( 0 , 1)) = 0.5884843
 		_GlowWidth("Glow Width", Range( 0 , 1)) = 0.6227403
 
 	}
@@ -123,7 +123,7 @@ Shader "Unlit/UI_ChargeBar"
 				UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX( IN );
 
 				float4 color3 = IsGammaSpace() ? float4(0.06132078,0.8934746,1,1) : float4(0.005032359,0.7745613,1,1);
-				float4 color4 = IsGammaSpace() ? float4(0.01713243,0.2227652,0.7264151,1) : float4(0.001326039,0.04064628,0.4865309,1);
+				float4 color4 = IsGammaSpace() ? float4(0.01713243,0.2227652,0.7264151,1) : float4(0.001326039,0.04064629,0.4865309,1);
 				float4 lerpResult13 = lerp( color3 , color4 , _Charge);
 				float2 texCoord6 = IN.texcoord.xy * float2( 1,1 ) + float2( 0,0 );
 				float temp_output_8_0 = step( texCoord6.x , _Charge );
@@ -151,9 +151,9 @@ Shader "Unlit/UI_ChargeBar"
 }
 /*ASEBEGIN
 Version=18900
-486;73;1468;752;1309.519;-103.512;1.437432;True;False
+484;73;1469;753;1310.238;-102.7933;1.437432;True;False
 Node;AmplifyShaderEditor.TextureCoordinatesNode;6;-789.624,539.5061;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RangedFloatNode;2;-684.5637,446.268;Inherit;False;Property;_Charge;Charge;0;0;Create;True;0;0;0;False;0;False;0.5884843;0;0;1;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;2;-684.5637,446.268;Inherit;False;Property;_Charge;_Charge;0;0;Create;True;0;0;0;False;0;False;0.5884843;0;0;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.BreakToComponentsNode;7;-432.4132,573.6375;Inherit;False;FLOAT2;1;0;FLOAT2;0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15
 Node;AmplifyShaderEditor.StepOpNode;8;-246.5388,597.5107;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleSubtractOpNode;9;-127.702,677.2272;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
@@ -190,4 +190,4 @@ WireConnection;18;0;17;0
 WireConnection;18;3;16;0
 WireConnection;1;0;18;0
 ASEEND*/
-//CHKSM=DAD53B4026FC4C2BD0594C7BF7653D3CCE49CC1D
+//CHKSM=146FAF4CB16A551F997D7B6ACCCDEB35D9DC6CCC

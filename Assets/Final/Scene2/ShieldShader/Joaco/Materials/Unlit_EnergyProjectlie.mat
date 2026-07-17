@@ -26,9 +26,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BodyAlpha: 0
+    - _BodyAlpha: 0.87
+    - _Fade: 1
     - _FlowSpeed: 1.5
-    - _NoiseTiling: 6
+    - _NoiseTiling: 2
     - _Power: 1
     - __dirty: 0
     m_Colors:

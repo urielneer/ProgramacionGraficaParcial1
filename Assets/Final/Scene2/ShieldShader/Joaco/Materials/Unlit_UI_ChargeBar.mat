@@ -26,9 +26,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Charge: 0.5884843
+    - _Charge: 0
     - _ColorMask: 15
-    - _GlowWidth: 0.6227403
+    - _GlowWidth: 0
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0

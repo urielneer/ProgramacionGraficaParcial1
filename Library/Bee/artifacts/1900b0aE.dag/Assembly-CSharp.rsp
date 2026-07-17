@@ -330,9 +330,11 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 "Assets/Final/Scene2/ShieldShader/Scripts/EnergyProjectile.cs"
-"Assets/Final/Scene2/ShieldShader/Scripts/Secuencia_Combate.cs"
+"Assets/Final/Scene2/ShieldShader/Scripts/sec.cs"
+"Assets/Final/Scene2/ShieldShader/Scripts/ShieldEnergy.cs"
 "Assets/Final/Scene2/ShieldShader/Scripts/Shooter.cs"
 "Assets/Final/Scene2/ShieldShader/Scripts/SideCameraController.cs"
+"Assets/Final/Scene2/ShieldShader/Scripts/TestDisparo.cs"
 "Assets/Final/Scene2/ShieldShader/Scripts/WeaponChargeUI.cs"
 "Assets/Final/Scene2/ShieldShader/Scripts/WeaponEnergy.cs"
 "Assets/Parcial 1/GhostCharacter_Free/Scripts/GhostScript.cs"
@@ -370,6 +372,7 @@
 "Assets/Parcial 2/Uriel Neer/1_Card/Assets/Synty - Third Party/PolygonGoblinWarCamp/Scripts/SyntyWaterBobGoblin.cs"
 "Assets/Parcial 2/Uriel Neer/2_Postprocesses/PostProcessManager.cs"
 "Assets/Parcial 2/Uriel Neer/RotatiionController.cs"
+"Assets/sec.cs"
 -langversion:9.0
 
 /deterministic

@@ -4,7 +4,7 @@ Shader "WeaponCharge"
 {
 	Properties
 	{
-		_ChargeAmount("ChargeAmount", Range( 0 , 1)) = 0.52
+		_ChargeAmount("_ChargeAmount", Range( 0 , 1)) = 0.52
 		_Color1("Color 1", Color) = (0.1642043,0.8490566,0.8155485,1)
 		_Color0("Color 0", Color) = (0.07849769,0.1403999,0.7924528,1)
 		_PulseSpeed("PulseSpeed", Float) = 6
@@ -127,18 +127,18 @@ Shader "WeaponCharge"
 }
 /*ASEBEGIN
 Version=18900
-660;73;1259;918;2116.823;614.5694;1.830608;True;False
+484;73;1469;753;2309.037;463.5443;1.830608;True;False
 Node;AmplifyShaderEditor.SimpleTimeNode;7;-1372.516,344.2332;Inherit;False;1;0;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;3;-1384.133,240.9754;Inherit;False;Property;_PulseSpeed;PulseSpeed;3;0;Create;True;0;0;0;False;0;False;6;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;11;-1127.717,311.9485;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SinOpNode;9;-964.6933,344.1142;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;5;-1046.685,131.8827;Inherit;False;Property;_ChargeAmount;_ChargeAmount;0;0;Create;True;0;0;0;False;0;False;0.52;0;0;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.TFHCRemapNode;10;-793.4464,265.5445;Inherit;False;5;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;0;False;4;FLOAT;1;False;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;5;-1046.685,131.8827;Inherit;False;Property;_ChargeAmount;ChargeAmount;0;0;Create;True;0;0;0;False;0;False;0.52;0;0;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;14;-540.5065,217.7637;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.ColorNode;2;-1062.052,-73.74031;Inherit;False;Property;_Color1;Color 1;1;0;Create;True;0;0;0;False;0;False;0.1642043,0.8490566,0.8155485,1;0.1642043,0.8490566,0.8155485,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RangedFloatNode;4;-1067.683,583.4534;Inherit;False;Property;_FresnelPower;FresnelPower;4;0;Create;True;0;0;0;False;0;False;3;0;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;17;-484.0795,307.2133;Inherit;False;Property;_PulseFactor;PulseFactor;5;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.ColorNode;1;-1047.233,-264.9401;Inherit;False;Property;_Color0;Color 0;2;0;Create;True;0;0;0;False;0;False;0.07849769,0.1403999,0.7924528,1;0.07849769,0.1403999,0.7924528,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.RangedFloatNode;17;-484.0795,307.2133;Inherit;False;Property;_PulseFactor;PulseFactor;5;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.FresnelNode;15;-797.1075,511.9706;Inherit;False;Standard;WorldNormal;ViewDir;False;False;5;0;FLOAT3;0,0,1;False;4;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;5;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;16;-337.1744,163.1887;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.LerpOp;6;-754.7427,-169.1502;Inherit;False;3;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;FLOAT;0;False;1;COLOR;0
@@ -166,4 +166,4 @@ WireConnection;12;0;8;0
 WireConnection;12;1;13;0
 WireConnection;0;2;12;0
 ASEEND*/
-//CHKSM=0BFE53C1958DD8EA496CEAE8CCA759880340E9C8
+//CHKSM=D71054D81833F21621E1B50C3B93A540356B977F

@@ -16,10 +16,12 @@ public class WeaponEnergy : MonoBehaviour
     [SerializeField] private Renderer nucleoEnergia; // mesh con material SH_WeaponCharge
     [SerializeField] private ParticleSystem particulasDeCarga;
 
-    [Header("Disparo")]
+    [Header("Disparo (láser instantáneo)")]
     [SerializeField] private EnergyProjectile prefabProyectil;
     [SerializeField] private ParticleSystem particulasDeDisparo; // muzzle flash
-    [SerializeField] private float velocidadProyectil = 40f;
+    [SerializeField] private float alcanceMaximo = 60f;
+    [SerializeField] private GameObject vfxImpacto;
+    [SerializeField] private LayerMask capasDeImpacto;
 
     private static readonly int ChargeAmountID = Shader.PropertyToID("_ChargeAmount");
 
@@ -78,8 +80,23 @@ public class WeaponEnergy : MonoBehaviour
 
         if (prefabProyectil != null && cañon != null)
         {
-            EnergyProjectile proyectil = Instantiate(prefabProyectil, cañon.position, cañon.rotation);
-            proyectil.Lanzar(cañon.forward * velocidadProyectil, cargaActual);
+            Vector3 inicio = cañon.position;
+            Vector3 fin = inicio + cañon.forward * alcanceMaximo;
+
+            // El láser es instantáneo: en el mismo instante del disparo calculamos
+            // a dónde llega, en vez de esperar a que un proyectil viaje y colisione.
+            if (Physics.Raycast(inicio, cañon.forward, out RaycastHit impacto, alcanceMaximo, capasDeImpacto))
+            {
+                fin = impacto.point;
+
+                ShieldEnergy escudo = impacto.collider.GetComponent<ShieldEnergy>();
+                if (escudo != null) escudo.RecibirImpacto();
+
+                if (vfxImpacto != null) Instantiate(vfxImpacto, impacto.point, Quaternion.identity);
+            }
+
+            EnergyProjectile laser = Instantiate(prefabProyectil);
+            laser.Disparar(inicio, fin, cargaActual);
         }
 
         OnDisparo?.Invoke();
