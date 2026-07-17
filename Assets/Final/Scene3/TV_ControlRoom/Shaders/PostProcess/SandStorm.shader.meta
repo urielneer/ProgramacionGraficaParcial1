@@ -2,7 +2,8 @@ fileFormatVersion: 2
 guid: 7f5838ff3b3a3d74daa6c98c166b3018
 ShaderImporter:
   externalObjects: {}
-  defaultTextures: []
+  defaultTextures:
+  - _SandStorm: {fileID: 2800000, guid: 784e5775f5561ed4d9c6a5561eee307b, type: 3}
   nonModifiableTextures: []
   preprocessorOverride: 0
   userData: 

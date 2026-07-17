@@ -4,7 +4,7 @@ Shader "Tornado"
 {
 	Properties
 	{
-		_MainTex("MainTex", 2D) = "white" {}
+		_MainTex("MainTex", 2D) = "bump" {}
 		_NoiseScale("NoiseScale", Range( 0 , 4)) = 1
 		_BiasTornado("BiasTornado", Range( 0 , 1)) = 0.5647059
 		_ScaleTornado("ScaleTornado", Range( 0 , 3)) = 1.870588
@@ -182,7 +182,7 @@ Shader "Tornado"
 }
 /*ASEBEGIN
 Version=18900
-0;73;1920;920;-123.8179;285.9654;1.174683;True;False
+228;73;830;400;-224.4035;-43.33084;1.850019;True;False
 Node;AmplifyShaderEditor.RangedFloatNode;7;56,225.5;Inherit;False;Property;_WindSpeed;WindSpeed;6;0;Create;True;0;0;0;False;0;False;2;2;0;5;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleTimeNode;6;135,79.5;Inherit;False;1;0;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.TextureCoordinatesNode;10;524,76.5;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
@@ -193,14 +193,14 @@ Node;AmplifyShaderEditor.RangedFloatNode;17;623,-274.5;Inherit;False;Property;_N
 Node;AmplifyShaderEditor.BreakToComponentsNode;14;804,-120.5;Inherit;False;FLOAT2;1;0;FLOAT2;0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15
 Node;AmplifyShaderEditor.NoiseGeneratorNode;16;987,-310.5;Inherit;True;Simplex2D;True;False;2;0;FLOAT2;0,0;False;1;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;36;627.1794,196.1272;Inherit;True;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;25;823.0804,568.289;Inherit;False;Property;_ScaleTornado;ScaleTornado;4;0;Create;True;0;0;0;False;0;False;1.870588;1.870588;0;3;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;24;821.0804,494.2893;Inherit;False;Property;_BiasTornado;BiasTornado;3;0;Create;True;0;0;0;False;0;False;0.5647059;0.5647059;0;1;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;26;837.0805,639.289;Inherit;False;Property;_PowerTornado;PowerTornado;5;0;Create;True;0;0;0;False;0;False;5;5;0;10;0;1;FLOAT;0
 Node;AmplifyShaderEditor.DynamicAppendNode;38;848.1794,270.1272;Inherit;True;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0
-Node;AmplifyShaderEditor.RangedFloatNode;26;1440.186,655.9397;Inherit;False;Property;_PowerTornado;PowerTornado;5;0;Create;True;0;0;0;False;0;False;5;5;0;10;0;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;25;1426.186,584.9397;Inherit;False;Property;_ScaleTornado;ScaleTornado;4;0;Create;True;0;0;0;False;0;False;1.870588;1.870588;0;3;0;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;24;1424.186,510.9397;Inherit;False;Property;_BiasTornado;BiasTornado;3;0;Create;True;0;0;0;False;0;False;0.5647059;0.5647059;0;1;0;1;FLOAT;0
+Node;AmplifyShaderEditor.PowerNode;15;953.5003,-75.8;Inherit;False;False;2;0;FLOAT;0;False;1;FLOAT;2;False;1;FLOAT;0
+Node;AmplifyShaderEditor.SamplerNode;12;1030.4,144.9001;Inherit;True;Property;_MainTex;MainTex;0;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;bump;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.FresnelNode;23;1221.184,354.1395;Inherit;False;Standard;WorldNormal;ViewDir;False;False;5;0;FLOAT3;0,0,1;False;4;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;5;False;1;FLOAT;0
 Node;AmplifyShaderEditor.ColorNode;22;1219.846,-522.5594;Inherit;False;Property;_TornadoColor;TornadoColor;7;0;Create;True;0;0;0;False;0;False;0.490566,0.4751076,0.4743681,0;0.490566,0.4751076,0.4743681,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SamplerNode;12;1030.4,144.9001;Inherit;True;Property;_MainTex;MainTex;0;0;Create;True;0;0;0;False;0;False;-1;None;b647607ac6c3ef14083342e85b180538;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.PowerNode;15;953.5003,-75.8;Inherit;False;False;2;0;FLOAT;0;False;1;FLOAT;2;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;21;1450.595,-248.799;Inherit;True;3;3;0;COLOR;0,0,0,0;False;1;FLOAT;0;False;2;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;27;1326.363,216.0791;Inherit;False;3;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;19;1006,62.5;Inherit;False;Property;_TornadoForce;TornadoForce;2;0;Create;True;0;0;0;False;0;False;6;10.58823;0;20;0;1;FLOAT;0
@@ -218,11 +218,11 @@ WireConnection;16;1;17;0
 WireConnection;36;0;14;0
 WireConnection;36;1;16;0
 WireConnection;38;0;36;0
+WireConnection;15;0;14;1
+WireConnection;12;1;38;0
 WireConnection;23;1;24;0
 WireConnection;23;2;25;0
 WireConnection;23;3;26;0
-WireConnection;12;1;38;0
-WireConnection;15;0;14;1
 WireConnection;21;0;12;0
 WireConnection;21;1;16;0
 WireConnection;21;2;22;0
@@ -238,4 +238,4 @@ WireConnection;35;0;21;0
 WireConnection;35;3;27;0
 WireConnection;34;0;35;0
 ASEEND*/
-//CHKSM=9E786D61A588E42D6B3228AC0353149F8517BE55
+//CHKSM=17DA4E1FEB3A4731F2C4FC351114CF646164414F
