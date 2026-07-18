@@ -6,36 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Parcial 2/MateoChavit/1-DrawMeshDistanceRenderTexture.unity
-    guid: c60daca50fdb04349910f08bd98a14c6
+    path: Assets/Final/Scene3/TV_ControlRoom/Scenes/Scene3Screens.unity
+    guid: 49856cdab6c4b7442b096ab7f9da6e7f
   - enabled: 1
-    path: Assets/Parcial 2/NahuelMarcoSerial/2.Distance/2.Distance.unity
-    guid: d4fde9e1d4bf54cb982ed32f70684f7f
-  - enabled: 1
-    path: Assets/Parcial 2/MauroPari/Stencil_Z-Buffer/Stencli_Z-Buffer.unity
-    guid: 9a92bca32b0af944687955f80b5acf5c
-  - enabled: 1
-    path: Assets/Parcial 2/Uriel Neer/2_Postprocesses/Postprocesses.unity
-    guid: b2b71c1c491555a4ab71a22fc91ebdea
-  - enabled: 1
-    path: Assets/Parcial 2/FlorianMathe/5.2dWater/WaterScene.unity
-    guid: d10cdb91a3a094efea8b0c8815b1c673
-  - enabled: 1
-    path: Assets/Parcial 2/FlorianMathe/6.UI_Portada/UIScene.unity
-    guid: 748fe7a49b71f4a73a2f464f14d23c6d
-  - enabled: 1
-    path: Assets/Parcial 2/NahuelMarcoSerial/7.Stencil/7.Stencil.unity
-    guid: 5f5487d76834c4e499689aa3b9ccb9fb
-  - enabled: 1
-    path: Assets/Parcial 2/Uriel Neer/1_Card/Card.unity
-    guid: b0099b90670cf164da2b52b42bd07a17
-  - enabled: 1
-    path: Assets/Parcial 2/JoaquinIvanko/9_Projector_Caustics_Joaquin_Ivanko.unity
-    guid: 3fd315696f501064e9110573830c41c6
-  - enabled: 1
-    path: Assets/Parcial 2/MauroPari/Projector_Window/Window_Projector.unity
-    guid: 261548a5f5662c441ab881817b638867
-  - enabled: 1
-    path: Assets/Parcial 2/JoaquinIvanko/11_Projector_Scanner_Joaquin_Ivanko.unity
-    guid: 6a078857aa759834796ea19fab191fb9
+    path: Assets/Final/Scene2/ShieldShader/Shield.unity
+    guid: efe02dd2ea3699c40a56495d8ee572e5
   m_configObjects: {}
